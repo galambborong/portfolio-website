@@ -1,0 +1,9 @@
+body {
+  background-color: #292D3E;
+  color: #EEFFFF;
+}
+
+.social-media {
+  display: inline;
+  list-style-type: none;
+}
