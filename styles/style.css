@@ -3,7 +3,46 @@ body {
   color: #EEFFFF;
 }
 
-.social-media {
+li.link {
   display: inline;
   list-style-type: none;
+  padding: 1em;
+}
+
+ul.social-media {
+  padding-inline-start: 0px;
+}
+
+#landing {
+  display: grid;
+  grid-area: 3 / 3 / span 3 / span 3;
+}
+
+h1, h2, h3 {
+  font-family: mononokiBold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+.sub-heading {
+  font-family: mononokiItalic;
+  text-align: center;
+  font-weight: 400;
+}
+
+code {
+  background-color: #3B415C;
+  color: #FFCB6B
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+}
+
+.code-syntax {
+  font-weight: 200;
 }
