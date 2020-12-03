@@ -9,6 +9,17 @@ li.link {
   padding: 1em;
 }
 
+.nav-list {
+  display: inline;
+  list-style-type: none;
+  padding: .618em;
+}
+
+a {
+  text-decoration: none;
+  color: #FFCB6B;
+}
+
 ul.social-media {
   padding-inline-start: 0px;
 }
@@ -16,6 +27,7 @@ ul.social-media {
 #landing {
   display: grid;
   grid-area: 3 / 3 / span 3 / span 3;
+  position: relative;
 }
 
 h1, h2, h3 {
@@ -28,7 +40,7 @@ h1 {
 }
 
 .sub-heading {
-  font-family: mononokiRegular;
+  font-family: mononokiItalic;
   text-align: center;
   font-weight: 400;
 }
@@ -45,4 +57,15 @@ code {
 
 .code-syntax {
   font-weight: 200;
+}
+
+ul {
+  font-family: mononokiBold;
+  padding-inline-start: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+
 }
