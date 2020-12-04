@@ -69,3 +69,9 @@ nav {
   justify-content: center;
 
 }
+
+p {
+  font-family: 'KarmillaRegular';
+  font-weight: normal;
+  font-style: normal;
+}
