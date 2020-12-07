@@ -3,6 +3,7 @@ body {
   color: #EEFFFF;
 }
 
+
 li.link {
   display: inline;
   list-style-type: none;
@@ -67,11 +68,23 @@ ul {
   padding-inline-start: 0px;
 }
 
+
+
 nav {
   display: flex;
   justify-content: center;
-
 }
+@media all and (max-width: 767px) {
+  nav.nav-list {
+    color: green;
+    padding: 5%;
+  }
+  a {
+    color: greenyellow;
+  }
+}
+
+
 
 p {
   font-family: 'KarmillaRegular';
