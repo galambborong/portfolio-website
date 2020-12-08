@@ -1,6 +1,7 @@
 body {
   background-color: #292D3E;
   color: #EEFFFF;
+  padding: 0.618em; 
 }
 
 
@@ -25,14 +26,22 @@ ul.social-media {
   padding-inline-start: 0px;
 }
 
+/*
 #landing {
   display: grid;
   flex-direction: column;
   grid-area: 3 / 3 / span 3 / span 3;
   position: relative;
-  align-self: center;
+  align-items: center;
   justify-items: center;
 }
+*/
+
+#landing {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 
 h1, h2, h3 {
   font-family: mononokiBold;
@@ -74,7 +83,7 @@ nav {
   display: flex;
   justify-content: center;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 414px) {
   nav.nav-list {
     color: green;
     padding: 5%;
@@ -83,6 +92,7 @@ nav {
     color: greenyellow;
   }
 }
+
 
 
 
