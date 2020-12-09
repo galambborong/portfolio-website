@@ -2,6 +2,8 @@ body {
   background-color: #292D3E;
   color: #EEFFFF;
   padding: 0.618em; 
+  max-width: 800px;
+  margin: auto;
 }
 
 
@@ -14,7 +16,11 @@ li.link {
 .nav-list {
   display: inline;
   list-style-type: none;
-  padding: .618em;
+  /* padding: .618em; */
+  padding: 5px;
+  background-color: #3B415C;
+  border: 1px solid;
+  border-radius: 20%;
 }
 
 a {
@@ -35,6 +41,7 @@ ul.social-media {
   align-items: center;
   justify-items: center;
   font-size: 18px;
+  height: 100vh;
 }
 
 
@@ -108,6 +115,7 @@ p {
   font-weight: normal;
   font-style: normal;
   font-size: 18px;
+  line-height: 1.618;
 }
 
 
@@ -118,6 +126,20 @@ footer>p {
 }
 
 footer {
-  position: absolute;
   bottom: 25px;
+  padding: 10px;
+  margin: auto;
+}
+
+
+#first-name {
+  /* color: #89DDFF; */
+
+  color: #FFCB6B;
+}
+
+#surname {
+  /* color: #C3E872; */
+
+  color: #F78C5B;
 }
