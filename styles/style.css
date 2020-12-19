@@ -22,6 +22,20 @@ li.link {
   border: 1px solid;
   border-radius: 20%; */
 }
+/* 
+.main-nav-layout {
+  max-width: 750px;
+  margin: auto;
+}
+.main-nav-layout .nav-list-left {
+  display: inline;
+  list-style-type: none;
+  position: relative;
+  align-items: left;
+  justify-content: left; 
+  font-size: 2rem;
+  padding: 0.618rem 50vw 0.618rem 0.618rem;
+} */
 
 a {
   text-decoration: none;
