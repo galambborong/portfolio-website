@@ -1,8 +1,9 @@
 body {
   background-color: #292D3E;
   color: #EEFFFF;
-  padding: 0.618em; 
+  padding: 1.618em; 
   max-width: 750px;
+  /* min-width: 320px; */
   margin: auto;
 }
 
@@ -22,7 +23,7 @@ li.link {
   border: 1px solid;
   border-radius: 20%; */
 }
-/* 
+
 .main-nav-layout {
   max-width: 750px;
   margin: auto;
@@ -34,8 +35,11 @@ li.link {
   align-items: left;
   justify-content: left; 
   font-size: 2rem;
+  background-color: #292D3E;
+  border-style: none;
+  font-family: mononokiBold;
   padding: 0.618rem 50vw 0.618rem 0.618rem;
-} */
+}
 
 a {
   text-decoration: none;
@@ -140,13 +144,13 @@ footer {
 }
 
 
-#first-name {
+.first {
   /* color: #89DDFF; */
 
   color: #FFCB6B;
 }
 
-#surname {
+.second {
   /* color: #C3E872; */
 
   color: #F78C5B;
@@ -160,7 +164,7 @@ footer {
 }
 
 
-/* .main-header-type {
+ .main-header-type {
   display: grid;
   flex-direction: column;
   grid-area: 3 / 3 / span 3 / span 3;
@@ -170,4 +174,12 @@ footer {
   font-size: 18px;
   display: block;
   height: 40%;
-} */
+} 
+
+.main-header-type .main-heading {
+  font-size: 3rem;
+}
+
+.main-header-type .sub-heading {
+  font-size: 2rem;
+}
