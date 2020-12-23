@@ -27,7 +27,36 @@ li.link {
 .main-nav-layout {
   max-width: 750px;
   margin: auto;
+  background-color: #292D3E;
+  display: inline;
 }
+
+
+button.nav-list-left {
+  background-color: #292D3E;
+  font-family: mononokiBold;
+  font-size: 2rem;
+  border-style: none;
+  float: left;
+  /* justify-content: baseline; */
+  /* align-items: baseline; */
+  /* position: relative; */
+  /* padding-right: 10vw; */
+  /* padding-left: 1.618em; */
+}
+
+button.nav-list-right {
+  background-color: #292D3E;
+  color: #EEFFFF;
+  font-family: mononokiBold;
+  font-size: 2rem;
+  border-style: none;
+  float: right; 
+  
+}
+
+
+/*
 .main-nav-layout .nav-list-left {
   display: inline;
   list-style-type: none;
@@ -38,8 +67,8 @@ li.link {
   background-color: #292D3E;
   border-style: none;
   font-family: mononokiBold;
-  padding: 0.618rem 50vw 0.618rem 0.618rem;
-}
+  padding: 0.618rem 50vw 0px 0px;
+} */
 
 a {
   text-decoration: none;
@@ -76,6 +105,7 @@ h1, h2, h3 {
 
 h1.main-heading {
   font-size: 72px;
+  padding-top: 3rem;
 }
 
 .sub-heading {
