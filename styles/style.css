@@ -32,27 +32,19 @@ li.link {
 }
 
 
-button.nav-list-left {
+button.main-nav {
   background-color: #292D3E;
   font-family: mononokiBold;
   font-size: 2rem;
-  border-style: none;
-  float: left;
-  /* justify-content: baseline; */
-  /* align-items: baseline; */
-  /* position: relative; */
-  /* padding-right: 10vw; */
-  /* padding-left: 1.618em; */
+  border-style: solid;
 }
 
-button.nav-list-right {
-  background-color: #292D3E;
-  color: #EEFFFF;
-  font-family: mononokiBold;
-  font-size: 2rem;
-  border-style: none;
+.left {
+  float: left;
+}
+
+.right {
   float: right; 
-  
 }
 
 
