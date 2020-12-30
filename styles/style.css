@@ -200,8 +200,21 @@ footer {
 
 .main-header-type .main-heading {
   font-size: 3rem;
+  font-family: 'KarmillaBold';
 }
 
 .main-header-type .sub-heading {
   font-size: 2rem;
+  font-family: 'KarmillaBold';
+  /* font-style: italic; */
+}
+
+aside {
+  font-family: 'KarmillaRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.618;
+  /* background-color: #3B415C; */
+  /* text-align: center; */
 }
