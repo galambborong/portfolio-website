@@ -149,11 +149,11 @@ nav {
   h1.main-heading {
     font-size: 40px;
   }
-  .nav-items {
+  #nav-items {
     display: none;
   }
 
-  .nav-items.show {
+  #nav-items #show {
     display: flex;
   }
 
