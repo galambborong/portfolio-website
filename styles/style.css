@@ -149,12 +149,16 @@ nav {
   h1.main-heading {
     font-size: 40px;
   }
-  #nav-items {
+  .nav-items {
     display: none;
   }
 
-  #hamburger {
+  .nav-items.show {
     display: flex;
+  }
+
+  #hamburger {
+    display: block;
     background-color: #292D3E;
     font-size: 2rem;
     color: #EEFFFF;
