@@ -48,6 +48,7 @@ button.main-nav {
 }
 
 
+
 /*
 .main-nav-layout .nav-list-left {
   display: inline;
@@ -125,12 +126,21 @@ ul {
   padding-inline-start: 0px;
 }
 
+#hamburger {
+  display: none;
+}
+
 
 
 nav {
   display: flex;
   justify-content: center;
 }
+
+#nav-items {
+  text-transform: lowercase;
+}
+
 @media all and (max-width: 426px) {
   li.link {
     padding: 0.5em;
@@ -139,6 +149,18 @@ nav {
   h1.main-heading {
     font-size: 40px;
   }
+  #nav-items {
+    display: none;
+  }
+
+  #hamburger {
+    display: flex;
+    background-color: #292D3E;
+    font-size: 2rem;
+    color: #EEFFFF;
+    border-style: solid;
+  }
+
 }
 
 
@@ -215,6 +237,4 @@ aside {
   font-style: normal;
   font-size: 18px;
   line-height: 1.618;
-  /* background-color: #3B415C; */
-  /* text-align: center; */
 }
