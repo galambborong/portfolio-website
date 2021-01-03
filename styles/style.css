@@ -211,3 +211,20 @@ button.main-nav {
     display: block;
   }
 }
+
+
+@media all and (max-width: 640px) {
+  /* Navigation  */
+  .nav-items {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+}
