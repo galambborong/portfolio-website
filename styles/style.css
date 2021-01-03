@@ -4,7 +4,7 @@ body {
   background-color: #292d3e;
   color: #eeffff;
   padding: 1.618em;
-  max-width: 750px;
+  max-width: 1250px;
   margin: auto;
 }
 
@@ -185,6 +185,12 @@ button.main-nav {
   font-family: "KarmillaBold";
 }
 
+img#pk {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*** MEDIA QUERIES ***/
 
 /** Smallest screens **/
