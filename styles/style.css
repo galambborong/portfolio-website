@@ -165,6 +165,8 @@ button.main-nav {
 
 .nav-items {
   text-transform: lowercase;
+  margin: 0;
+  font-size: 2rem;
 }
 
 .main-header-type {
