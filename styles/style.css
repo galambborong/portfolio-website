@@ -36,7 +36,7 @@ button.main-nav {
   background-color: #292D3E;
   font-family: mononokiBold;
   font-size: 2rem;
-  border-style: solid;
+  border-style: none;
 }
 
 .left {
@@ -149,12 +149,19 @@ nav {
   h1.main-heading {
     font-size: 40px;
   }
-  #nav-items {
+
+  .nav-items {
     display: none;
   }
 
-  #nav-items #show {
+  .show {
     display: flex;
+    padding: .8rem 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3B415C;
+    flex-direction: column;
+    width: 100%;
   }
 
   #hamburger {
@@ -162,7 +169,7 @@ nav {
     background-color: #292D3E;
     font-size: 2rem;
     color: #EEFFFF;
-    border-style: solid;
+    cursor: pointer;
   }
 
 }
