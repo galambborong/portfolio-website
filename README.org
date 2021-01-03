@@ -1,0 +1,8 @@
+#+title: galambborong portfolio website
+#+author: galambborong / peterkeenan
+
+** About
+
+This portfolio website is being build as part of my precourse for a Northcoders bootcamp. The aim is to produce an accessible and responsive site to showcase my ongoing projects. 
+
+No frameworks are being used; it's just standard HTML, CSS and JavaScript.
