@@ -4,35 +4,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <title>Coding</title>
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
+  <script src="https://kit.fontawesome.com/26e6f380d4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li class="nav-list"><a href="./index.html">home</a></li>
+  <nav class="main-nav-layout">
+    <button class="main-nav left"><a href="./index.html"><span class="first">p</span><span
+          class="second">k</span></a></button>
+    <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
+    <ul class="main-nav right nav-items" id="nav-items">
       <li class="nav-list"><a href="./about.html">about</a></li>
       <li class="nav-list"><a href="./projects.html">projects</a></li>
-      <li class="nav-list"><a href="#">contact</a></li>
+      <li class="nav-list"><a href="./contact.html">contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <header>
-      <h1>Some coding projects</h1>
+    <header class="main-header-type">
+      <h1 class="main-heading">Coding</h1>
+      <h2 class="sub-heading">A brief overview of my projects</h2>
     </header>
-    <section id="projects">
-      <div class="container">
-        <h4 class="sub-heading">Recent projects</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo expedita illum facere fugiat commodi
-          minus, a cum excepturi recusandae soluta perferendis aperiam in delectus molestiae repellat maiores impedit
-          vitae blanditiis.</p>
-      </div>
+    <section class="card-holder">
+      <article class="card">
+        <h3>Dummy content one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nihil?</p>
+      </article>
+      <article class="card">
+        <h3>Dummy content two</h3>
+        <p>Lorem ipsum dolor consectetur adipisicing elit. Voluptatem, nihil?</p>
+      </article>
+      <article class="card">
+        <h3>Dummy content three</h3>
+        <p>Lorem ipsum dolor consectetur adipisicing elit. Voluptatem, nihil?</p>
+      </article>
+      <article class="card">
+        <h3>Dummy content four</h3>
+        <p>Lorem ipsum dolor consectetur adipisicing elit. Voluptatem, nihil?</p>
+      </article>
     </section>
   </main>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

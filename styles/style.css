@@ -18,7 +18,7 @@ a[target="_blank"]:after {
   content: "\f08e";
   padding-left: .2rem;
   font-size: .7rem;
-  vertical-align: .05rem;
+  vertical-align: .1rem;
 }
 
 /* NOTE: nav-list applies to all nav>ul>li elements */
@@ -209,8 +209,48 @@ img#pk {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*** Project page card styling ***/
+
+.card-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  border: 1px solid #eeffff;
+  margin: 10px;
+  background-color: #3b415c;
+}
+
+.card p {
+  padding: .6rem;
+  font-size: .8rem;
+}
+
 /*** MEDIA QUERIES ***/
 
+@media all and (max-width: 640px) {
+  /* Navigation  */
+  .nav-items {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Card layouts */
+
+  .card-holder {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
 /** Smallest screens **/
 
 @media all and (max-width: 426px) {
@@ -229,26 +269,16 @@ img#pk {
 
   .show {
     display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-}
-
-
-@media all and (max-width: 640px) {
-  /* Navigation  */
-  .nav-items {
-    display: none;
-  }
-
-  .show {
-    display: flex;
+    font-size: 1.5rem;
   }
 
   .hamburger {
     display: block;
   }
 
+  .card-holder {
+    grid-template-columns: 100%;
+  }
 }
+
+
