@@ -161,14 +161,8 @@ button.main-nav {
   cursor: pointer;
 }
 
-.show {
+.nav-items .show {
   display: none;
-  padding: 0.8rem 0;
-  text-decoration: none;
-  text-align: center;
-  background-color: #3b415c;
-  flex-direction: column;
-  width: 100%;
 }
 
 .nav-items {
@@ -228,6 +222,14 @@ img#pk {
   font-size: .8rem;
 }
 
+.card-holder .card-info {
+  display: none;
+}
+
+.show-proj {
+  display: block;
+}
+
 /*** MEDIA QUERIES ***/
 
 @media all and (max-width: 640px) {
@@ -236,8 +238,14 @@ img#pk {
     display: none;
   }
 
-  .show {
+  .show-nav {
     display: flex;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3b415c;
+    flex-direction: column;
+    width: 100%;
   }
 
   .hamburger {
