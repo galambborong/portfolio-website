@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
 </head>
 
+
 <body>
-    <h1>Holding content</h1>
-    <p>Nothin' to see here. Move along.</p>
-    <p><a href="./index.html">Back to landing page</a></p>
+  <nav class="main-nav-layout">
+    <button class="main-nav left"><a href="./index.html"><span class="first">p</span><span
+          class="second">k</span></a></button>
+    <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
+    <ul class="main-nav right nav-items" id="nav-items">
+      <li class="nav-list"><a href="./about.html">about</a></li>
+      <li class="nav-list"><a href="./projects.html">projects</a></li>
+      <li class="nav-list"><a href="./contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <header class="main-header-type">
+      <h1 class="main-heading">Contact</h1>
+      <h2 class="sub-heading">Sub-heading</h2>
+    </header>
+    <section id="email">
+      <h3>Email</h3>
+      <p>If you want to get in touch, I'd be delighted to hear from you! Provided you're not a machine, you should be
+        able to
+        figure out my email address from the information below.</p>
+      <p class="code-style">mySurname@<a href="https://posteo.de/en">thisEmailProvider</a>.net</p>
+      <p>Should you prefer you use encrypted email, <a href="./pk_public.pgp">my public GPG key is available here.</a>
+      </p>
+    </section>
+    <section id="form-submission">
+      <h3>Contact form</h3>
+      <p>If the above isn't clear, feel free to use this contact form:</p>
+      <form action="">
+        <label for="name">Full name:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="name" cols="30" rows="10"></textarea>
+      </form>
+    </section>
+  </main>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

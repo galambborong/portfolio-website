@@ -185,6 +185,14 @@ button.main-nav {
   font-family: "KarmillaBold";
 }
 
+.code-style {
+  font-family: mononokiRegular;
+  font-size: small;
+  background-color: #3b415c;
+  border: 1px solid #eeffff;
+  padding: 1rem
+}
+
 img#pk {
   width: 50%;
   display: block;
