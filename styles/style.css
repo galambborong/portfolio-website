@@ -14,11 +14,12 @@ a {
 }
 
 a[target="_blank"]:after {
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   content: "\f08e";
-  padding-left: .2rem;
-  font-size: .7rem;
-  vertical-align: .1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+  font-size: 0.7rem;
+  vertical-align: 0.1rem;
 }
 
 /* NOTE: nav-list applies to all nav>ul>li elements */
@@ -194,7 +195,7 @@ button.main-nav {
   margin: auto;
   background-color: #3b415c;
   border: 1px solid #eeffff;
-  padding: 1rem
+  padding: 1rem;
 }
 
 img#pk {
@@ -218,8 +219,8 @@ img#pk {
 }
 
 .card p {
-  padding: .6rem;
-  font-size: .8rem;
+  padding: 0.6rem;
+  font-size: 0.8rem;
 }
 
 .card-holder .card-info {
@@ -257,7 +258,6 @@ img#pk {
   .card-holder {
     grid-template-columns: 1fr 1fr;
   }
-
 }
 /** Smallest screens **/
 
@@ -275,7 +275,17 @@ img#pk {
     display: none;
   }
 
-  .show {
+  .show-nav {
+    display: flex;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3b415c;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  -.show {
     display: flex;
     font-size: 1.5rem;
   }
@@ -288,5 +298,3 @@ img#pk {
     grid-template-columns: 100%;
   }
 }
-
-
