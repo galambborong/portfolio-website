@@ -4,7 +4,7 @@ body {
   background-color: #292d3e;
   color: #eeffff;
   padding: 1.618em;
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
 }
 
@@ -20,6 +20,15 @@ a[target="_blank"]:after {
   padding-right: 0.2rem;
   font-size: 0.7rem;
   vertical-align: 0.1rem;
+}
+
+a[href]:hover {
+  background-color: #212532;
+  color: #f78c5b;
+  transition-property: all;
+  transition-duration: 250ms;
+  padding: 1px;
+  border: dashed 1px #919494;
 }
 
 /* NOTE: nav-list applies to all nav>ul>li elements */
@@ -68,7 +77,7 @@ p {
   font-family: "KarmillaRegular";
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.618;
 }
 
@@ -76,7 +85,7 @@ aside {
   font-family: "KarmillaRegular";
   font-weight: normal;
   font-style: normal;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.618;
 }
 
@@ -132,10 +141,11 @@ footer {
 /*** GENERAL STYLING, STANDARD PAGE ***/
 
 /* Styling for *all* nav other than landing page */
+
 .main-nav-layout {
   max-width: 750px;
   margin: auto;
-  background-color: #292d3e;
+  background-color: #3b415c;
   display: inline;
 }
 
@@ -213,6 +223,7 @@ h3 {
   font-family: KarmillaBold;
   text-align: left;
   color: #f78c5b;
+  font-size: 24px;
 }
 
 /*** Project page card styling ***/
@@ -261,6 +272,12 @@ input[type="text"] {
   color: #292d3e;
   border-style: none;
   border-radius: 4px;
+  height: 2rem;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: #595e72;
 }
 
 input[type="submit"] {
@@ -270,6 +287,11 @@ input[type="submit"] {
   font-family: "KarmillaBold";
   font-size: 1.2rem;
   border-radius: 4px;
+  height: 2rem;
+}
+
+textarea::placeholder {
+  color: #595e72;
 }
 
 textarea {
@@ -278,6 +300,7 @@ textarea {
   border-radius: 4px;
   background-color: #eeffff;
   color: #292d3e;
+  font-size: 20px;
 }
 
 /*** MEDIA QUERIES ***/
