@@ -33,13 +33,28 @@
       <p>If you want to get in touch, I'd be delighted to hear from you! Provided you're not a machine, you should be
         able to
         figure out my email address from the information below.</p>
-      <p class="code-style">mySurname@<a href="https://posteo.de/en" target="_blank" rel="noopener noreferrer">thisEmailProvider</a>.net</p>
+      <div class="code-style">
+        <code>
+          <span class="second">const</span> mySurname = "keenan";<br>
+          <span class="second">const</span> myEmailProvider = "posteo.net";<br><br>
+          <span class="second">const</span> myEmail = `${mySurname}@${myEmailProvider}`;
+        </code>
+      </div>
       <p>Should you prefer you use encrypted email, <a href="./pk_public.pgp">my public GPG key is available here.</a>
       </p>
     </section>
     <section id="form">
       <form action="" class="contact">
-
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter name">
+        <br>
+        <label for="contact">Email address</label>
+        <input type="text" name="email" placeholder="Email address">
+        <br>
+        <label for="message">Message</label>
+        <textarea name="message" id="" rows="3" placeholder="Type your message here"></textarea>
+        <br>
+        <input type="submit">
       </form>
     </section>
   </main>

@@ -189,13 +189,17 @@ button.main-nav {
 }
 
 .code-style {
-  font-family: mononokiRegular;
-  font-size: small;
   width: fit-content;
   margin: auto;
   background-color: #3b415c;
   border: 1px solid #eeffff;
   padding: 1rem;
+}
+
+.code-style code {
+  font-family: mononokiRegular;
+  font-size: 1rem;
+  color: #ffcb6b;
 }
 
 img#pk {
@@ -229,6 +233,45 @@ img#pk {
 
 .show-proj {
   display: block;
+}
+
+/*** Contact form  ***/
+
+form {
+  display: grid;
+  max-width: 60vw;
+  margin: auto;
+}
+
+label {
+  color: #f78c5b;
+  font-family: "KarmillaBold";
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  font-family: "KarmillaRegular";
+  background-color: #eeffff;
+  color: #292d3e;
+  border-style: none;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #c792ea;
+  color: #292d3e;
+  border: none;
+  font-family: "KarmillaBold";
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+
+textarea {
+  font-family: "KarmillaRegular";
+  border-style: none;
+  border-radius: 4px;
+  background-color: #eeffff;
+  color: #292d3e;
 }
 
 /*** MEDIA QUERIES ***/
@@ -285,10 +328,10 @@ img#pk {
     width: 100%;
   }
 
-  -.show {
+  /* .show {
     display: flex;
     font-size: 1.5rem;
-  }
+  } */
 
   .hamburger {
     display: block;
@@ -298,3 +341,5 @@ img#pk {
     grid-template-columns: 100%;
   }
 }
+
+/* "url": "http://www.eclipsecolorthemes.org/?view=theme&id=50245" */
