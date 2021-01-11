@@ -198,7 +198,7 @@ button.main-nav {
 
 .code-style code {
   font-family: mononokiRegular;
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #ffcb6b;
 }
 
@@ -207,6 +207,12 @@ img#pk {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+h3 {
+  font-family: KarmillaBold;
+  text-align: left;
+  color: #f78c5b;
 }
 
 /*** Project page card styling ***/
@@ -300,6 +306,14 @@ textarea {
 
   .card-holder {
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Contact form */
+
+  form {
+    display: grid;
+    max-width: 100%;
+    margin: auto;
   }
 }
 /** Smallest screens **/

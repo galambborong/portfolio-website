@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact</title>
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/style.css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
 </head>
 
-
 <body>
   <nav class="main-nav-layout">
-    <button class="main-nav left"><a href="./index.html"><span class="first">p</span><span
-          class="second">k</span></a></button>
+    <button class="main-nav left">
+      <a href="./index.html"><span class="first">p</span><span class="second">k</span></a>
+    </button>
     <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
     <ul class="main-nav right nav-items" id="nav-items">
       <li class="nav-list"><a href="./about.html">about</a></li>
@@ -26,36 +26,47 @@
   <main>
     <header class="main-header-type">
       <h1 class="main-heading">Contact</h1>
-      <h2 class="sub-heading">Sub-heading</h2>
+      <h2 class="sub-heading">How to get in touch</h2>
+      <p>If you want to get in touch, I'd be delighted to hear from you!</p>
     </header>
-    <section id="email">
-      <h3>Email</h3>
-      <p>If you want to get in touch, I'd be delighted to hear from you! Provided you're not a machine, you should be
-        able to
-        figure out my email address from the information below.</p>
-      <div class="code-style">
-        <code>
-          <span class="second">const</span> mySurname = "keenan";<br>
-          <span class="second">const</span> myEmailProvider = "posteo.net";<br><br>
-          <span class="second">const</span> myEmail = `${mySurname}@${myEmailProvider}`;
-        </code>
-      </div>
-      <p>Should you prefer you use encrypted email, <a href="./pk_public.pgp">my public GPG key is available here.</a>
-      </p>
-    </section>
     <section id="form">
+      <h3 class="contact-options">Contact form</h3>
+      <p>
+        Fill out the contact form details below and I will respond as soon as
+        possible.
+      </p>
       <form action="" class="contact">
         <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Enter name">
-        <br>
+        <input type="text" name="name" placeholder="Enter name" />
+        <br />
         <label for="contact">Email address</label>
-        <input type="text" name="email" placeholder="Email address">
-        <br>
+        <input type="text" name="email" placeholder="Email address" />
+        <br />
         <label for="message">Message</label>
         <textarea name="message" id="" rows="3" placeholder="Type your message here"></textarea>
-        <br>
-        <input type="submit">
+        <br />
+        <input type="submit" />
       </form>
+    </section>
+    <section id="email">
+      <h3 class="contact-options">Email</h3>
+      <p>
+        If you'd prefer not to use the contact form, you should be able to
+        figure out my email address from the information below (provided
+        you're not a machine!).
+      </p>
+      <div class="code-style">
+        <code>
+            <span class="second">const</span> mySurname = "keenan";<br />
+            <span class="second">const</span> myEmailProvider = "posteo.net";<br /><br />
+            <span class="second">const</span> myEmail =
+            `${mySurname}@${myEmailProvider}`;
+          </code>
+      </div>
+      <p>
+        Should you prefer you use encrypted email,
+        <a href="./pk_public.pgp">my public GPG key is available here.</a>
+      </p>
     </section>
   </main>
   <script src="scripts/script.js"></script>
