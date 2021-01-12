@@ -123,12 +123,14 @@ footer {
 .social-media-links {
   display: flex;
   justify-content: center;
+  padding-inline-start: 0px;
 }
 
 .social-media-links .link {
   display: inline;
   list-style-type: none;
   padding: 1em;
+  padding-inline-start: 0px;
 }
 
 .social-media-links .link a[target="_blank"]:after {
