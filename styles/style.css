@@ -27,12 +27,13 @@ a[href]:hover {
   color: #f78c5b;
   transition-property: all;
   transition-duration: 250ms;
-  padding: 1px;
+  /* padding: 1px; */
   border: dashed 1px #919494;
 }
 
 /* NOTE: nav-list applies to all nav>ul>li elements */
 .nav-list {
+  font-family: mononokiRegular;
   display: inline;
   list-style-type: none;
   padding: 0.618rem;
@@ -68,9 +69,13 @@ h1.main-heading {
   font-weight: 400;
 }
 
-ul {
-  font-family: mononokiBold;
+.landing-page-nav-layout ul {
   padding-inline-start: 0px;
+}
+
+ul {
+  font-family: KarmillaRegular;
+  font-size: 20px;
 }
 
 p {
@@ -109,16 +114,30 @@ footer {
   color: #f78c5b;
 }
 
+.hl-pink {
+  color: #c792ea;
+}
+
 /*** GENERAL STYLING, HOME PAGE ***/
 
 .social-media-links {
   display: flex;
   justify-content: center;
 }
+
 .social-media-links .link {
   display: inline;
   list-style-type: none;
   padding: 1em;
+}
+
+.social-media-links .link a[target="_blank"]:after {
+  font-family: none;
+  content: none;
+}
+
+ul .social-media-links {
+  padding-inline-start: 0px;
 }
 
 #landing-section {
@@ -200,7 +219,7 @@ button.main-nav {
 
 .code-style {
   width: fit-content;
-  margin: auto;
+  /* margin: auto; */
   background-color: #3b415c;
   border: 1px solid #eeffff;
   padding: 1rem;
@@ -274,6 +293,7 @@ input[type="text"] {
   border-radius: 4px;
   height: 2rem;
   font-size: 20px;
+  text-indent: 6px;
 }
 
 input::placeholder {
@@ -301,11 +321,24 @@ textarea {
   background-color: #eeffff;
   color: #292d3e;
   font-size: 20px;
+  text-indent: 6px;
 }
 
 /*** MEDIA QUERIES ***/
 
+@media all and (max-width: 900px) {
+  main {
+    width: 83%;
+    margin: auto;
+  }
+}
+
 @media all and (max-width: 640px) {
+  main {
+    width: 100%;
+    margin: auto;
+  }
+
   /* Navigation  */
   .nav-items {
     display: none;
@@ -350,6 +383,10 @@ textarea {
     font-size: 40px;
   }
 
+  main {
+    width: 100%;
+    margin: auto;
+  }
   /* Navigation  */
   .nav-items {
     display: none;

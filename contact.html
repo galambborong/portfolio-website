@@ -35,15 +35,12 @@
         Fill out the contact form details below and I will respond as soon as
         possible.
       </p>
-      <form action="" class="contact">
-        <!-- <label for="name">Name</label> -->
+      <form action="https://formspree.io/f/xknpkpdy" method="POST" class="contact">
         <input type="text" name="name" placeholder="Enter your name here" />
         <br />
-        <!-- <label for="contact">Email address</label> -->
-        <input type="text" name="email" placeholder="And your email address" />
+        <input type="text" name="_replyto" placeholder="And your email address" />
         <br />
-        <!-- <label for="message">Message</label> -->
-        <textarea name="message" id="" rows="3" placeholder="Type your message here"></textarea>
+        <textarea name="message" rows="3" placeholder="Type your message here"></textarea>
         <br />
         <input type="submit" />
       </form>
@@ -53,7 +50,7 @@
       <p>
         If you'd prefer not to use the contact form, you should be able to
         figure out my email address from the information below (provided
-        you're not a machine!).
+        you're not a machine). <b>Hint</b>: this is JavaScript syntax.
       </p>
       <div class="code-style">
         <code>
@@ -67,6 +64,18 @@
         Should you prefer to use encrypted email,
         <a href="./pk_public.pgp">my public GPG key is available here.</a>
       </p>
+    </section>
+    <section id="social-media">
+      <h3>Across the web</h3>
+      <p>You can also find me on the following platforms:</p>
+      <ul>
+        <li><a href="https://linuxrocks.online/@galambborong" target="_blank" rel="noopener noreferrer">Mastodon</a>
+        </li>
+        <li><a href="https://github.com/galambborong" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://gitlab.com/galambborong" target="_blank" rel="noopener noreferrer">GitLab</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Matrix</a></li>
+      </ul>
     </section>
   </main>
   <script src="scripts/script.js"></script>
