@@ -22,6 +22,18 @@ a[target="_blank"]:after {
   vertical-align: 0.1rem;
 }
 
+.repo-link {
+  color: #eeffff;
+}
+
+a.repo-link::after {
+  font-family: "FontAwesome";
+  content: "\f09b";
+  font-size: 2rem;
+  vertical-align: 0.5rem;
+  padding: 0.5rem;
+}
+
 a[href]:hover {
   background-color: #212532;
   color: #f78c5b;
@@ -29,6 +41,13 @@ a[href]:hover {
   transition-duration: 250ms;
   /* padding: 1px; */
   border: dashed 1px #919494;
+}
+
+a.repo-link[href]:hover {
+  border: none;
+  background-color: #3b415c;
+  transition: all;
+  transition-duration: 250ms;
 }
 
 /* NOTE: nav-list applies to all nav>ul>li elements */
@@ -118,6 +137,10 @@ footer {
   color: #c792ea;
 }
 
+.fa {
+  color: #eeffff;
+  font-size: 35px;
+}
 /*** GENERAL STYLING, HOME PAGE ***/
 
 .social-media-links {
@@ -131,6 +154,12 @@ footer {
   list-style-type: none;
   padding: 1em;
   padding-inline-start: 0px;
+}
+
+.social-media-links .link a[href]:hover {
+  border: none;
+  background-color: #292d3e;
+  color: #f78c5b;
 }
 
 .social-media-links .link a[target="_blank"]:after {
