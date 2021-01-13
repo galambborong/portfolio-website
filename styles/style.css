@@ -28,10 +28,10 @@ a[target="_blank"]:after {
 
 a.repo-link::after {
   font-family: "FontAwesome";
-  content: "\f09b";
+  content: "\f09b"; /* f09b for GH, f296 for GL */
   font-size: 2rem;
   vertical-align: 0.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 a[href]:hover {
@@ -299,6 +299,7 @@ h3 {
 }
 
 .card p {
+  margin: 0;
   padding: 1rem;
 }
 
