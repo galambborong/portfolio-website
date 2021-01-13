@@ -258,11 +258,19 @@ h3 {
   border: 1px solid #eeffff;
   margin: 10px;
   background-color: #3b415c;
+  align-self: start;
+}
+
+.card h3 {
+  text-align: center;
+  font-family: mononokiBold;
+  color: #7fb347;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .card p {
-  padding: 0.6rem;
-  font-size: 0.8rem;
+  padding: 1rem;
 }
 
 .card-holder .card-info {
