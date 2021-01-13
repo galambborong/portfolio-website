@@ -1,65 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/mononoki"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/karmilla"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/26e6f380d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Music</title>
-  <link rel="stylesheet" href="/styles/style.css" />
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
-  <script src="https://kit.fontawesome.com/26e6f380d4.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <nav class="main-nav-layout">
+      <button class="main-nav left">
+        <a href="./index.html"
+          ><span class="first">p</span><span class="second">k</span></a
+        >
+      </button>
+      <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
+      <ul class="main-nav right nav-items" id="nav-items">
+        <li class="nav-list"><a href="./about.html">about</a></li>
+        <li class="nav-list"><a href="./projects.html">projects</a></li>
+        <li class="nav-list"><a href="./contact.html">contact</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="main-nav-layout">
-    <button class="main-nav left">
-      <a href="./index.html"><span class="first">p</span><span class="second">k</span></a>
-    </button>
-    <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
-    <ul class="main-nav right nav-items" id="nav-items">
-      <li class="nav-list"><a href="./about.html">about</a></li>
-      <li class="nav-list"><a href="./projects.html">projects</a></li>
-      <li class="nav-list"><a href="./contact.html">contact</a></li>
-    </ul>
-  </nav>
+    <main>
+      <header class="main-header-type">
+        <h1 class="main-heading">My musical activities</h1>
+        <h2 class="sub-heading">A brief summary</h2>
+      </header>
 
-  <main>
-    <header class="main-header-type">
-      <h1 class="main-heading">My musical activities</h1>
-      <h2 class="sub-heading">A brief summary</h2>
-    </header>
-
-    <section id="performer">
-      <h3>Performing</h3>
-      <p>
-        I work in various contexts as a conductor/music director. I founded
-        <a href="https://operadeilumi.org.uk" target="_blank" rel="noopener noreferrer">Opera dei Lumi</a>
-        and am Music Director of
-        <a href="#" target="_blank" rel="noopener noreferrer">Northern Praeclassica</a>.
-      </p>
-    </section>
-    <section id="research">
-      <h3>Research</h3>
-      <p>
-        I researched Mozart's temporal strategies as part of my MMus(R)
-        degree. I have written reviews and articles for a number of
-        organisations, recently the <i>Eighteenth-Century Music</i> journal,
-        published by Cambridge University Press. I am assisting Mozart scholar
-        Clemens Kemme with his upcoming monograph publication
-      </p>
-    </section>
-    <section id="engraver">
-      <h3>Music engraving</h3>
-      <p>
-        I previously worked as a music engraver using SCORE. I worked for a
-        range of individuals, including composers Thomas Simaku and Nigel
-        Osborne, as well as publishers such as Edition Wilhelm Hansen and
-        Ricordi.
-      </p>
-    </section>
-  </main>
-  <script src="scripts/script.js"></script>
-</body>
-
+      <section id="performer">
+        <h3>Performing</h3>
+        <p>
+          I work in various contexts as a conductor/music director. I founded
+          <a
+            href="https://operadeilumi.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Opera dei Lumi</a
+          >
+          and am Music Director of
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            >Northern Praeclassica</a
+          >.
+        </p>
+      </section>
+      <section id="research">
+        <h3>Research</h3>
+        <p>
+          I researched Mozart's temporal strategies as part of my MMus(R)
+          degree. I have written reviews and articles for a number of
+          organisations, recently the <i>Eighteenth-Century Music</i> journal,
+          published by Cambridge University Press. I am assisting Mozart scholar
+          Clemens Kemme with his upcoming monograph publication on the C-minor
+          Mass, K427, with a particular emphasis on English.
+        </p>
+        <p>
+          <a
+            href="https://orcid.org/0000-0001-6603-7920"
+            target="_blank"
+            rel="noopener noreferrer"
+            >See my ORCID profile here</a
+          >
+        </p>
+      </section>
+      <section id="engraver">
+        <h3>Music engraving</h3>
+        <p>
+          I previously worked as a music engraver using SCORE. I worked for a
+          range of individuals, including composers Thomas Simaku and Nigel
+          Osborne, as well as publishers such as Edition Wilhelm Hansen and
+          Ricordi.
+        </p>
+      </section>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
