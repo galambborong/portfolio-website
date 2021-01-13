@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/mononoki"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/karmilla"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/26e6f380d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About me</title>
-  <link rel="stylesheet" href="/styles/style.css" />
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
-  <script src="https://kit.fontawesome.com/26e6f380d4.js" crossorigin="anonymous"></script>
-</head>
+  <body>
+    <nav class="main-nav-layout">
+      <button class="main-nav left">
+        <a href="./index.html"
+          ><span class="first">p</span><span class="second">k</span></a
+        >
+      </button>
+      <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
+      <ul class="main-nav right nav-items" id="nav-items">
+        <li class="nav-list"><a href="./about.html">about</a></li>
+        <li class="nav-list"><a href="./projects.html">projects</a></li>
+        <li class="nav-list"><a href="./contact.html">contact</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="main-nav-layout">
-    <button class="main-nav left">
-      <a href="./index.html"><span class="first">p</span><span class="second">k</span></a>
-    </button>
-    <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
-    <ul class="main-nav right nav-items" id="nav-items">
-      <li class="nav-list"><a href="./about.html">about</a></li>
-      <li class="nav-list"><a href="./projects.html">projects</a></li>
-      <li class="nav-list"><a href="./contact.html">contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <header class="main-header-type">
-      <h1 class="main-heading">About me</h1>
-      <img id="pk" src="./images/peter-keenan.jpeg" alt="Artistic image of Peter Keenan drawn by Susanna Keenan" />
-      <h2 class="sub-heading">Musician-turned-coder</h2>
-    </header>
-    <section id="about-me">
-      <p>
-        I trained as a musician and musicologist. I am now changing career
-        path and pursuing my interest in logic and coding. In January 2021, I
-        begin a full-stack developer course with
-        <a href="https://northcoders.com/" class="external" target="_blank" rel="noopener noreferrer">Northcoders</a>.
-      </p>
-      <aside id="music-info">
-        If you're interested, <a href="./music.html">here's</a> a little
-        overview of some of my musical activities.
-      </aside>
-      <p>
-        I'm a fairly longstanding Linux user and suppose that was my 'gateway
-        drug' to coding. I'm a big believer in free and open source software.
-        You'll find me across the web, usually as <b class="hl-pink">galambborong</b>, but
-        occasionally by my actual name. Other than LinkedIn, you'll not find
-        me on any mainstream social media. I red-pilled a while back and am
-        quite happy on the decentralised, open source
-        <a href="https://joinmastodon.org/" target="_blank" rel="noopener noreferrer">Mastodon</a>
-        platform!
-      </p>
-      <p>
-        I fuel my coding with plenty of freshly brewed coffee from my Bialetti
-        Moka Express, and - when possible - like to ride my bikes.
-      </p>
-    </section>
-  </main>
-  <script src="scripts/script.js"></script>
-</body>
-
+    <main>
+      <header class="main-header-type">
+        <h1 class="main-heading">About me</h1>
+        <img
+          id="pk"
+          src="./images/peter-keenan.jpeg"
+          alt="Artistic image of Peter Keenan drawn by Susanna Keenan"
+        />
+        <h2 class="sub-heading">Musician-turned-coder</h2>
+      </header>
+      <section id="about-me">
+        <p>
+          I trained as a musician and musicologist. I am now changing career
+          path and pursuing my interest in logic and coding. In January 2021, I
+          begin a full-stack developer course with
+          <a
+            href="https://northcoders.com/"
+            class="external"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Northcoders</a
+          >.
+        </p>
+        <aside id="music-info">
+          If you're interested, <a href="./music.html">here's</a> a little
+          overview of some of my musical activities.
+        </aside>
+        <p>
+          I'm a fairly longstanding Linux user and suppose that was my 'gateway
+          drug' to coding. I'm a big believer in free and open source software.
+        </p>
+        <p>
+          Since getting into coding, I've explored the languages below. The
+          'skill IQs' are from my Pluralsight profile:
+        </p>
+        <ul>
+          <li>JavaScript&ensp;<small>(162, proficient)</small></li>
+          <li>Python&ensp;<small>(179, proficient)</small></li>
+          <li>C#&ensp;<small>(173, proficient)</small></li>
+          <li>Haskell</li>
+        </ul>
+        <p>I've also learned the following technologies to some degree:</p>
+        <ul>
+          <li>Git&ensp;<small>(245, expert)</small></li>
+          <li>Docker&ensp;<small>(124, proficient)</small></li>
+          <li>ASP.NET&ensp;<small>(131, proficient)</small></li>
+          <li>Flask</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+          <li>Nginx</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+        <p>
+          I fuel my coding with plenty of freshly brewed coffee from my Bialetti
+          Moka Express, and - when possible - like to ride my bikes.
+        </p>
+      </section>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
