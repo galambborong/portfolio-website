@@ -137,7 +137,7 @@ footer {
   color: #c792ea;
 }
 
-.fa {
+.fa::before {
   color: #eeffff;
   font-size: 35px;
 }
