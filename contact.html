@@ -1,87 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/mononoki"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/karmilla"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/26e6f380d4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-  <link rel="stylesheet" href="/styles/style.css" />
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
-</head>
+  <body>
+    <nav class="main-nav-layout">
+      <button class="main-nav left">
+        <a href="./index.html"
+          ><span class="first">p</span><span class="second">k</span></a
+        >
+      </button>
+      <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
+      <ul class="main-nav right nav-items" id="nav-items">
+        <li class="nav-list"><a href="./about.html">about</a></li>
+        <li class="nav-list"><a href="./projects.html">projects</a></li>
+        <li class="nav-list"><a href="./contact.html">contact</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="main-nav-layout">
-    <button class="main-nav left">
-      <a href="./index.html"><span class="first">p</span><span class="second">k</span></a>
-    </button>
-    <button class="main-nav right hamburger" id="hamburger">&#9776;</button>
-    <ul class="main-nav right nav-items" id="nav-items">
-      <li class="nav-list"><a href="./about.html">about</a></li>
-      <li class="nav-list"><a href="./projects.html">projects</a></li>
-      <li class="nav-list"><a href="./contact.html">contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <header class="main-header-type">
-      <h1 class="main-heading">Contact</h1>
-      <h2 class="sub-heading">How to get in touch</h2>
-      <p>If you want to get in touch, I'd be delighted to hear from you!</p>
-    </header>
-    <section id="form">
-      <h3 class="contact-options">Contact form</h3>
-      <p>
-        Fill out the contact form details below and I will respond as soon as
-        possible.
-      </p>
-      <form action="https://formspree.io/f/xknpkpdy" method="POST" class="contact">
-        <input type="text" name="name" placeholder="Enter your name here" />
-        <br />
-        <input type="text" name="_replyto" placeholder="And your email address" />
-        <br />
-        <textarea name="message" rows="3" placeholder="Type your message here"></textarea>
-        <br />
-        <input type="submit" />
-      </form>
-    </section>
-    <section id="email">
-      <h3 class="contact-options">Email</h3>
-      <p>
-        If you'd prefer not to use the contact form, you should be able to
-        figure out my email address from the information below (provided
-        you're not a machine). <b>Hint</b>: this is JavaScript syntax.
-      </p>
-      <div class="code-style">
-        <code>
+    <main>
+      <header class="main-header-type">
+        <h1 class="main-heading">Contact</h1>
+        <h2 class="sub-heading">How to get in touch</h2>
+        <p>If you want to get in touch, I'd be delighted to hear from you!</p>
+      </header>
+      <section id="form">
+        <h3 class="contact-options">Contact form</h3>
+        <p>
+          Fill out the contact form details below and I will respond as soon as
+          possible.
+        </p>
+        <form
+          action="https://formspree.io/f/xknpkpdy"
+          method="POST"
+          class="contact"
+        >
+          <input type="text" name="name" placeholder="Enter your name here" />
+          <br />
+          <input
+            type="text"
+            name="_replyto"
+            placeholder="And your email address"
+          />
+          <br />
+          <textarea
+            name="message"
+            rows="3"
+            placeholder="Type your message here"
+          ></textarea>
+          <br />
+          <input type="submit" />
+        </form>
+      </section>
+      <section id="email">
+        <h3 class="contact-options">Email</h3>
+        <p>
+          If you'd prefer not to use the contact form, you should be able to
+          figure out my email address from the information below (provided
+          you're not a machine). <b>Hint</b>: this is JavaScript syntax.
+        </p>
+        <div class="code-style">
+          <code>
             <span class="second">const</span> mySurname = "keenan";<br />
             <span class="second">const</span> myEmailProvider = "posteo.net";<br /><br />
             <span class="second">const</span> myEmail =
             `${mySurname}@${myEmailProvider}`;
           </code>
-      </div>
-      <p>
-        Should you prefer to use encrypted email,
-        <a href="./pk_public.pgp">my public GPG key is available here.</a>
-      </p>
-    </section>
-    <section id="social-media">
-      <h3>Across the web</h3>
-      <p>You can also find me on the following platforms:</p>
-      <ul>
-        <li><a href="https://linuxrocks.online/@galambborong" target="_blank" rel="noopener noreferrer">Mastodon</a>
-        </li>
-        <li><a href="https://github.com/galambborong" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        <li><a href="https://gitlab.com/galambborong" target="_blank" rel="noopener noreferrer">GitLab</a></li>
-        <li><a href="https://www.linkedin.com/in/peter-keenan-bb951a46" target="_blank"
-            rel="noopener noreferrer">LinkedIn</a></li>
-        <li>Any <a href="https://matrix.org" target="_blank" rel="noopener noreferrer">Matrix</a> app&emsp;
-          <small>(@galambborong)</small>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <script src="scripts/script.js"></script>
-</body>
-
+        </div>
+        <p>
+          Should you prefer to use encrypted email,
+          <a href="./pk_public.pgp">my public GPG key is available here.</a>
+        </p>
+      </section>
+      <section id="social-media">
+        <h3>Across the web</h3>
+        <p>You can also find me on the following platforms:</p>
+        <ul>
+          <li>
+            <a
+              href="https://linuxrocks.online/@galambborong"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mastodon</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/galambborong"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://gitlab.com/galambborong"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitLab</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/peter-keenan-bb951a46"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            Any
+            <a
+              href="https://matrix.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Matrix</a
+            >
+            app&emsp;
+            <small>(@galambborong)</small>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>

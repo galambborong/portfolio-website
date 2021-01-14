@@ -179,7 +179,7 @@ ul .social-media-links {
   align-items: center;
   justify-items: center;
   font-size: 18px;
-  height: 90vh;
+  height: 100vh;
 }
 
 #landing-strapline {
@@ -453,6 +453,10 @@ textarea {
 
   .card-holder {
     grid-template-columns: 100%;
+  }
+
+  #landing-section {
+    height: 90vh;
   }
 }
 
