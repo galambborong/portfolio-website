@@ -86,6 +86,7 @@ h1.main-heading {
   font-family: mononokiItalic;
   text-align: center;
   font-weight: 400;
+  color: #eeffff;
 }
 
 .landing-page-nav-layout ul {
@@ -134,7 +135,8 @@ footer {
 }
 
 .hl-pink {
-  color: #c792ea;
+  /* color: #c792ea; */
+  color: #bed6ff;
 }
 
 .fa::before {
@@ -259,7 +261,7 @@ button.main-nav {
 .code-style code {
   font-family: mononokiRegular;
   font-size: 0.85rem;
-  color: #ffcb6b;
+  /* color: #ffcb6b; */
 }
 
 img#pk {
