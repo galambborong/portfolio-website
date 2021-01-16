@@ -137,6 +137,7 @@ footer {
 .hl-pink {
   /* color: #c792ea; */
   color: #bed6ff;
+  font-weight: 500;
 }
 
 .fa::before {
