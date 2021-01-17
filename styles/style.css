@@ -134,10 +134,13 @@ footer {
   color: #f78c5b;
 }
 
-.hl-pink {
-  /* color: #c792ea; */
-  color: #ffcb6b;
+.hl {
+  color: #c3e872;
   font-weight: 500;
+  /* Leave these here until you're convinced on colors! */
+  /* color: #c792ea; */
+  /* color: #89ddff; */
+  /* color: #ffcb6b; */
 }
 
 .fa::before {
@@ -296,9 +299,12 @@ h3 {
 .card h3 {
   text-align: center;
   font-family: mononokiBold;
-  color: #f78c5b;
+  color: #7fb347;
   padding-left: 5px;
   padding-right: 5px;
+  /* Leave these here until you're convinved on colors */
+  /* color: #f78c5b; */
+  /* color: #ffcb6b; */
 }
 
 .card p {
