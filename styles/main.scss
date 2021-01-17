@@ -1,0 +1,34 @@
+$colours: (
+  midnight-blue: #292d3e,
+  white: #eeffff,
+  light-blue: #3b415c,
+  orange: #f78c5b,
+  yellow: #ffcb6b,
+  dark-green: #7fb347,
+  green: #c3e872,
+  pink: #C792EA
+);
+
+@function colour($colour-name) {
+  @return map-get($colours, $colour-name)
+}
+
+body {
+  background-color: colour(midnight-blue);
+  color: colour(white);
+
+  h1 {
+    font-family: KarmillaBold;
+  }
+}
+
+.card-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  &.card {
+    border: 1px solid colour(white);
+    margin: 10px;
+    background-color: colour(light-blue);
+  }
+}
