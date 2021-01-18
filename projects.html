@@ -1,155 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coding</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="https://fontlibrary.org/face/mononoki"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="https://fontlibrary.org/face/karmilla"
-      type="text/css"
-    />
-    <script
-      src="https://kit.fontawesome.com/26e6f380d4.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <nav class="main-nav-layout">
-      <button class="main-nav left">
-        <a href="./index.html"
-          ><span class="first">p</span><span class="second">k</span></a
-        >
-      </button>
-      <button
-        class="main-nav right hamburger"
-        id="hamburger"
-        title="Navigate this site"
-      >
-        &#9776;
-      </button>
-      <ul class="main-nav right nav-items" id="nav-items">
-        <li class="nav-list"><a href="./about.html">about</a></li>
-        <li class="nav-list"><a href="./projects.html">projects</a></li>
-        <li class="nav-list"><a href="./contact.html">contact</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coding</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
+  <script src="https://kit.fontawesome.com/26e6f380d4.js" crossorigin="anonymous"></script>
+</head>
 
-    <main>
-      <header class="main-header-type">
-        <h1 class="main-heading">Coding</h1>
-        <h2 class="sub-heading">A brief overview of my projects</h2>
-      </header>
-      <section class="projects card-holder">
-        <article class="card" id="xscor">
-          <a
-            href="https://github.com/galambborong/xscor"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="repo-link"
-          >
-            <h3>XSCOR</h3>
-            <p>
-              A <span class="hl">Python</span> project which reads binary
-              SCORE files and outputs their parameter content.
-            </p>
-          </a>
-        </article>
-        <article class="card" id="pk-website">
-          <a
-            href="https://github.com/galambborong/portfolio-website"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="repo-link"
-          >
-            <h3>Personal website</h3>
-            <p>
-              This website, written in vanilla
-              <span class="hl">HTML</span>,
-              <span class="hl">CSS</span> and
-              <span class="hl">JavaScript</span>.
-            </p>
-          </a>
-        </article>
-        <article class="card" id="asp-website">
-          <a
-            href="https://github.com/galambborong/ASP.NET-website"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="repo-link"
-          >
-            <h3>Website in ASP.NET</h3>
-            <p>
-              A portfolio website created in
-              <span class="hl">ASP.NET</span> with
-              <span class="hl">C#</span>,
-              <span class="hl">Razor</span> and
-              <span class="hl">Bootstrap</span>.
-            </p>
-          </a>
-        </article>
-        <article class="card" id="scraper">
-          <a
-            href="https://github.com/galambborong/scraper"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="repo-link"
-          >
-            <h3>Web scraper</h3>
-            <p>
-              A web scraper written in <span class="hl">Python</span> for
-              monitoring 350+ artist pages.
-            </p>
-          </a>
-        </article>
-      </section>
+<body>
+  <nav class="menu">
+    <button class="menu__btn--left">
+      <a href="./index.html"><span class="first">p</span><span class="second">k</span></a>
+    </button>
+    <button class="menu__btn--right hamburger" id="hamburger" title="Navigate this site">
+      &#9776;
+    </button>
+    <ul class="menu__list" id="nav-items">
+      <li class="menu__item"><a href="./about.html">about</a></li>
+      <li class="menu__item"><a href="./projects.html">projects</a></li>
+      <li class="menu__item"><a href="./contact.html">contact</a></li>
+    </ul>
+  </nav>
 
-      <header class="main-header-type">
-        <h2 class="sub-heading">Related repositories</h2>
-      </header>
-      <section class="related-repos card-holder">
-        <article class="card" id="dotfiles">
-          <a
-            href="https://github.com/galambborong/dotfiles"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="repo-link"
-          >
-            <h3>My dotfiles</h3>
-            <p>I maintain an up-to-date public dotfiles repository.</p>
-          </a>
-        </article>
-        <article class="card" id="st">
-          <h3>My suckless terminal fork</h3>
-          <p>I use my own fork of the suckless terminal.</p>
-        </article>
-        <article class="card" id="old-website">
-          <a
-            href="https://github.com/galambborong/peterkeenan.co.uk"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="repo-link"
-          >
-            <h3>Previous personal website</h3>
-            <p>
-              A previous personal website written in
-              <span class="hl">Python</span> using
-              <span class="hl">Flask</span> and
-              <span class="hl">Jinja</span>.
-            </p>
-          </a>
-        </article>
-      </section>
-    </main>
-    <script src="scripts/script.js"></script>
-  </body>
+  <main>
+    <header class="header">
+      <h1 class="header__title">Coding</h1>
+      <h2 class="header__sub">A brief overview of my projects</h2>
+    </header>
+    <section class="card-holder">
+      <article class="card" id="xscor">
+        <a class="card__link" href="https://github.com/galambborong/xscor" target="_blank" rel="noopener noreferrer">
+          <h3 class="card__title">XSCOR</h3>
+          <p class="card__desc">
+            A <span class="accent">Python</span> project which reads binary
+            SCORE files and outputs their parameter content.
+          </p>
+        </a>
+      </article>
+      <article class="card" id="pk-website">
+        <a class="card__link" href="https://github.com/galambborong/portfolio-website" target="_blank"
+          rel="noopener noreferrer">
+          <h3 class="card__title">Personal website</h3>
+          <p class="card__desc">
+            This website, written in vanilla
+            <span class="accent">HTML</span>,
+            <span class="accent">CSS</span> and
+            <span class="accent">JavaScript</span>.
+          </p>
+        </a>
+      </article>
+      <article class="card" id="asp-website">
+        <a class="card__link" href="https://github.com/galambborong/ASP.NET-website" target="_blank"
+          rel="noopener noreferrer">
+          <h3 class="card__title">Website in ASP.NET</h3>
+          <p class="card__desc">
+            A portfolio website created in
+            <span class="accent">ASP.NET</span> with
+            <span class="accent">C#</span>,
+            <span class="accent">Razor</span> and
+            <span class="accent">Bootstrap</span>.
+          </p>
+        </a>
+      </article>
+      <article class="card" id="scraper">
+        <a class="card__link" href="https://github.com/galambborong/scraper" target="_blank" rel="noopener noreferrer">
+          <h3 class="card__title">Web scraper</h3>
+          <p class="card__desc">
+            A web scraper written in <span class="accent">Python</span> for
+            monitoring 350+ artist pages.
+          </p>
+        </a>
+      </article>
+    </section>
+
+    <header class="header">
+      <h2 class="header__title">Related repositories</h2>
+    </header>
+    <section class="card-holder">
+      <article class="card" id="dotfiles">
+        <a class="card__link" href="https://github.com/galambborong/dotfiles" target="_blank" rel="noopener noreferrer">
+          <h3 class="card__title">My dotfiles</h3>
+          <p class="card__desc">
+            I maintain an up-to-date public dotfiles repository.
+          </p>
+        </a>
+      </article>
+      <article class="card" id="st">
+        <h3 class="card__title">My suckless terminal fork</h3>
+        <p class="card__desc">I use my own fork of the suckless terminal.</p>
+      </article>
+      <article class="card" id="old-website">
+        <a class="card__link" href="https://github.com/galambborong/peterkeenan.co.uk" target="_blank"
+          rel="noopener noreferrer">
+          <h3 class="card__title">Previous personal website</h3>
+          <p class="card__desc">
+            A previous personal website written in
+            <span class="accent">Python</span> using
+            <span class="accent">Flask</span> and
+            <span class="accent">Jinja</span>.
+          </p>
+        </a>
+      </article>
+    </section>
+  </main>
+  <script src="scripts/script.js"></script>
+</body>
+
 </html>
