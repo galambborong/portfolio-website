@@ -1,34 +1,117 @@
 $colours: (
+  muted-grey: #919494,
+  darkest-blue: #212532,
   midnight-blue: #292d3e,
-  white: #eeffff,
+  tinted-white: #eeffff,
   light-blue: #3b415c,
-  orange: #f78c5b,
-  yellow: #ffcb6b,
+  deep-orange: #f78c5b,
+  mustard-yellow: #ffcb6b,
   dark-green: #7fb347,
-  green: #c3e872,
-  pink: #C792EA
+  pale-green: #c3e872,
+  giro-pink: #c792ea,
 );
 
 @function colour($colour-name) {
-  @return map-get($colours, $colour-name)
+  @return map-get($colours, $colour-name);
 }
 
 body {
   background-color: colour(midnight-blue);
-  color: colour(white);
-
-  h1 {
-    font-family: KarmillaBold;
-  }
+  max-width: 900px;
+  margin: auto;
+  color: colour(tinted-white);
+  font-family: KarmillaRegular;
+  font-size: 20px;
+  line-height: 1.618;
+  padding: 1.618em;
 }
+
+/* Anchor tag stylings */
+
+a {
+  text-decoration: none;
+  color: colour(deep-orange);
+}
+
+a[href]:hover {
+  background-color: colour(darkest-blue);
+  color: colour(deep-orange);
+  border: dashed 1px colour(muted-grey);
+  transition-property: all;
+  transition-duration: 250ms;
+}
+
+a[target="_blank"]:after {
+  font-family: "FontAwesome";
+  content: "\f08e";
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+  font-size: 0.7rem;
+  vertical-align: 0.1rem;
+}
+
+/* Miscellaneous stylings */
+
+.accent {
+  color: colour(pale-green);
+  font-weight: 500;
+}
+
+/* Navigation here */
+
+/* Header */
+
+.header {
+  display: block;
+  height: 40%;
+  font-family: KarmillaBold;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 3rem;
+}
+
+.header__sub {
+  font-size: 2rem;
+}
+
+/* Project cards */
 
 .card-holder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  border: 1px solid colour(tinted-white);
+  margin: 10px;
+  background-color: colour(light-blue);
+  align-self: start;
+}
 
-  &.card {
-    border: 1px solid colour(white);
-    margin: 10px;
-    background-color: colour(light-blue);
-  }
+.card__link {
+  color: colour(tinted-white);
+}
+
+// Not sure that's the best way anyways...
+a.card__link::after {
+  font-family: "FontAwesome";
+  content: "\f09b"; /* f09b for GH, f296 for GL */
+  font-size: 2rem;
+  vertical-align: 0.5rem;
+  padding: 1rem;
+  color: colour(tinted-white);
+}
+
+.card__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: mononokiBold;
+  color: colour(dark-green);
+  padding: 0 5px;
+}
+
+.card__desc {
+  margin: 0;
+  padding: 1rem;
 }

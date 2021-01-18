@@ -1,19 +1,99 @@
+@charset "UTF-8";
 body {
   background-color: #292d3e;
+  max-width: 900px;
+  margin: auto;
   color: #eeffff;
-}
-body h1 {
-  font-family: KarmillaBold;
+  font-family: KarmillaRegular;
+  font-size: 20px;
+  line-height: 1.618;
+  padding: 1.618em;
 }
 
+/* Anchor tag stylings */
+a {
+  text-decoration: none;
+  color: #f78c5b;
+}
+
+a[href]:hover {
+  background-color: #212532;
+  color: #f78c5b;
+  border: dashed 1px #919494;
+  transition-property: all;
+  transition-duration: 250ms;
+}
+
+a[target=_blank]:after {
+  font-family: "FontAwesome";
+  content: "";
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+  font-size: 0.7rem;
+  vertical-align: 0.1rem;
+}
+
+/* Miscellaneous stylings */
+.accent {
+  color: #c3e872;
+  font-weight: 500;
+}
+
+/* Navigation here */
+/* Header */
+.header {
+  display: block;
+  height: 40%;
+  font-family: KarmillaBold;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 3rem;
+}
+
+.header__sub {
+  font-size: 2rem;
+}
+
+/* Project cards */
 .card-holder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.card-holder.card {
+
+.card {
   border: 1px solid #eeffff;
   margin: 10px;
   background-color: #3b415c;
+  align-self: start;
+}
+
+.card__link {
+  color: #eeffff;
+}
+
+a.card__link::after {
+  font-family: "FontAwesome";
+  content: "";
+  /* f09b for GH, f296 for GL */
+  font-size: 2rem;
+  vertical-align: 0.5rem;
+  padding: 1rem;
+  color: #eeffff;
+}
+
+.card__title {
+  font-size: 24px;
+  text-align: center;
+  font-family: mononokiBold;
+  color: #7fb347;
+  padding: 0 5px;
+}
+
+.card__desc {
+  margin: 0;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
