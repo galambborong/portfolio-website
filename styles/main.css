@@ -40,6 +40,50 @@ a[target=_blank]:after {
 }
 
 /* Navigation here */
+.menu {
+  max-width: 100%;
+  margin: auto;
+  background-color: #3b415c;
+}
+
+.menu__btn {
+  background-color: #292d3e;
+  font-family: mononokiBold;
+  font-size: 2rem;
+  border-style: none;
+}
+
+.btn--left {
+  float: left;
+}
+
+.btn--right {
+  float: right;
+}
+
+/* Hamburger and std menu toggle */
+.hamburger {
+  display: none;
+  background-color: #292d3e;
+  font-size: 2rem;
+  color: #eeffff;
+  cursor: pointer;
+}
+
+.menu__list {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: lowercase;
+  float: right;
+  font-family: mononokiBold;
+}
+
+.menu__item {
+  display: inline;
+  list-style-type: none;
+  padding: 0.618rem;
+}
+
 /* Header */
 .header {
   display: block;
@@ -50,6 +94,7 @@ a[target=_blank]:after {
 
 .header__title {
   font-size: 3rem;
+  padding-top: 3rem;
 }
 
 .header__sub {

@@ -59,6 +59,50 @@ a[target="_blank"]:after {
 
 /* Navigation here */
 
+.menu {
+  max-width: 100%;
+  margin: auto;
+  background-color: colour(light-blue);
+  // display: inline;
+}
+
+.menu__btn {
+  background-color: colour(midnight-blue);
+  font-family: mononokiBold;
+  font-size: 2rem;
+  border-style: none;
+}
+  .btn--left {
+    float: left;
+  }
+  .btn--right {
+    float: right;
+  }
+
+/* Hamburger and std menu toggle */
+.hamburger {
+  display: none;
+  background-color: colour(midnight-blue);
+  font-size: 2rem;
+  color: colour(tinted-white);
+  cursor: pointer;
+}
+
+.menu__list {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: lowercase;
+  float: right;
+  font-family: mononokiBold;
+}
+
+.menu__item {
+  display: inline;
+  list-style-type: none;
+  padding: 0.618rem;
+
+}
+
 /* Header */
 
 .header {
@@ -70,6 +114,7 @@ a[target="_blank"]:after {
 
 .header__title {
   font-size: 3rem;
+  padding-top: 3rem;
 }
 
 .header__sub {
@@ -82,6 +127,7 @@ a[target="_blank"]:after {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .card {
   border: 1px solid colour(tinted-white);
   margin: 10px;
