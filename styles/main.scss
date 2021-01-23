@@ -15,6 +15,12 @@ $colours: (
   @return map-get($colours, $colour-name);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: colour(midnight-blue);
   max-width: 900px;
@@ -72,12 +78,12 @@ a[target="_blank"]:after {
   font-size: 2rem;
   border-style: none;
 }
-  .btn--left {
-    float: left;
-  }
-  .btn--right {
-    float: right;
-  }
+.btn--left {
+  float: left;
+}
+.btn--right {
+  float: right;
+}
 
 /* Hamburger and std menu toggle */
 .hamburger {
@@ -100,7 +106,6 @@ a[target="_blank"]:after {
   display: inline;
   list-style-type: none;
   padding: 0.618rem;
-
 }
 
 /* Header */
@@ -150,7 +155,7 @@ a.card__link::after {
 }
 
 .card__title {
-  font-size: 24px;
+  font-size: 1.2rem;
   text-align: center;
   font-family: mononokiBold;
   color: colour(dark-green);
