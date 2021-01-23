@@ -45,11 +45,17 @@ a[target=_blank]:after {
   font-weight: 500;
 }
 
+.first {
+  color: #ffcb6b;
+}
+
 /* Navigation here */
 .menu {
   max-width: 100%;
   margin: auto;
-  background-color: #3b415c;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  color: #ffcb6b;
 }
 
 .menu__btn {
@@ -60,11 +66,11 @@ a[target=_blank]:after {
 }
 
 .btn--left {
-  float: left;
+  justify-self: start;
 }
 
 .btn--right {
-  float: right;
+  justify-self: end;
 }
 
 /* Hamburger and std menu toggle */
@@ -82,12 +88,17 @@ a[target=_blank]:after {
   text-transform: lowercase;
   float: right;
   font-family: mononokiBold;
+  justify-self: end;
 }
 
 .menu__item {
   display: inline;
   list-style-type: none;
   padding: 0.618rem;
+}
+
+.menu__item a {
+  color: #ffcb6b;
 }
 
 /* Header */

@@ -63,12 +63,19 @@ a[target="_blank"]:after {
   font-weight: 500;
 }
 
+.first {
+  color: colour(mustard-yellow);
+}
+
 /* Navigation here */
 
 .menu {
   max-width: 100%;
   margin: auto;
-  background-color: colour(light-blue);
+  // background-color: colour(light-blue);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  color: colour(mustard-yellow);
   // display: inline;
 }
 
@@ -78,11 +85,14 @@ a[target="_blank"]:after {
   font-size: 2rem;
   border-style: none;
 }
+
 .btn--left {
-  float: left;
+  justify-self: start;
+  // float: left;
 }
 .btn--right {
-  float: right;
+  // float: right;
+  justify-self: end;
 }
 
 /* Hamburger and std menu toggle */
@@ -100,6 +110,7 @@ a[target="_blank"]:after {
   text-transform: lowercase;
   float: right;
   font-family: mononokiBold;
+  justify-self: end;
 }
 
 .menu__item {
@@ -107,7 +118,9 @@ a[target="_blank"]:after {
   list-style-type: none;
   padding: 0.618rem;
 }
-
+.menu__item a {
+  color: colour(mustard-yellow);
+}
 /* Header */
 
 .header {
