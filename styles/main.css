@@ -185,7 +185,7 @@ a[href]:hover {
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
-  color: #c792ea;
+  color: #55a8ec;
 }
 
 .tech__icons {
