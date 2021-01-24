@@ -186,6 +186,7 @@ a[href]:hover {
   grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
   color: #55a8ec;
+  font-size: 1.6rem;
 }
 
 .tech__icons {
