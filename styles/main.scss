@@ -161,6 +161,7 @@ a[href]:hover {
   font-family: mononokiBold;
   color: colour(dark-green);
   margin: 1rem;
+  text-transform: lowercase;
 }
 
 .card__desc {
@@ -202,7 +203,7 @@ a[href]:hover {
 .tech {
   display: inline-grid;
   width: 100%;
-  grid-template-columns: 1fr ; 
+  grid-template-columns: repeat(4,1fr); 
   list-style-type: none;
   color: colour(giro-pink);
 }
