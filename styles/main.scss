@@ -72,11 +72,9 @@ a[target="_blank"]:after {
 .menu {
   max-width: 100%;
   margin: auto;
-  // background-color: colour(light-blue);
   display: grid;
   grid-template-columns: 1fr auto;
   color: colour(mustard-yellow);
-  // display: inline;
 }
 
 .menu__btn {
@@ -88,10 +86,8 @@ a[target="_blank"]:after {
 
 .btn--left {
   justify-self: start;
-  // float: left;
 }
 .btn--right {
-  // float: right;
   justify-self: end;
 }
 
