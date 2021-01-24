@@ -30,7 +30,7 @@ a[href]:hover {
   transition-duration: 250ms;
 }
 
-a[target=_blank]:after {
+.external a:after {
   font-family: "FontAwesome";
   content: "";
   padding-left: 0.5rem;
@@ -112,10 +112,12 @@ a[target=_blank]:after {
 .header__title {
   font-size: 3rem;
   padding-top: 3rem;
+  margin: 2rem 0;
 }
 
 .header__sub {
   font-size: 2rem;
+  margin: 1.625rem 0;
 }
 
 /* Project cards */
@@ -135,27 +137,58 @@ a[target=_blank]:after {
   color: #eeffff;
 }
 
-a.card__link::after {
-  font-family: "FontAwesome";
-  content: "";
-  /* f09b for GH, f296 for GL */
-  font-size: 2rem;
-  vertical-align: 0.5rem;
-  padding: 1rem;
-  color: #eeffff;
-}
-
 .card__title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: mononokiBold;
   color: #7fb347;
-  padding: 0 5px;
+  margin: 1rem;
 }
 
 .card__desc {
-  margin: 0;
-  padding: 1rem;
+  margin: 1rem;
+}
+
+/* Repo link styling */
+.repo-info {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1rem;
+  place-items: center;
+  font-family: mononokiRegular;
+}
+
+.repo-info__cta {
+  font-size: 1rem;
+  justify-self: end;
+}
+
+.repo-info__link {
+  font-size: 1.3rem;
+  justify-self: start;
+  color: #eeffff;
+}
+
+.repo-info__link::after {
+  font-family: none;
+  content: none;
+}
+
+.repo-info__link:hover {
+  font-family: none;
+}
+
+/* Card icons */
+.tech {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  list-style-type: none;
+  color: #c792ea;
+}
+
+.tech__icons {
+  justify-self: center;
 }
 
 /*# sourceMappingURL=main.css.map */
