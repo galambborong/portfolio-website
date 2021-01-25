@@ -11,6 +11,7 @@ $colours: (
   giro-pink: #c792ea,
   susanna-blue: #55a8ec,
   lightest-blue: #bed6ff,
+  grey-blue: #595e72,
 );
 
 @function colour($colour-name) {
@@ -38,7 +39,7 @@ body {
 
 a {
   text-decoration: none;
-  color: colour(deep-orange);
+  color: colour(mustard-yellow);
 }
 
 a[href]:hover {
@@ -49,6 +50,9 @@ a[href]:hover {
   transition-duration: 250ms;
 }
 
+p {
+  margin: 20px 0;
+}
 .external a:after {
   font-family: "FontAwesome";
   content: "\f08e";
@@ -67,6 +71,10 @@ a[href]:hover {
 
 .first {
   color: colour(mustard-yellow);
+}
+
+.second {
+  color: colour(deep-orange);
 }
 
 /* Navigation here */
@@ -197,7 +205,7 @@ a[href]:hover {
 }
 
 .repo-info__link:hover {
-  font-family: none;;
+  font-family: none;
 }
 
 /* Card icons */
@@ -205,7 +213,7 @@ a[href]:hover {
 .tech {
   display: inline-grid;
   width: 100%;
-  grid-template-columns: repeat(4,1fr); 
+  grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
   color: colour(susanna-blue);
   font-size: 1.6rem;
@@ -215,3 +223,53 @@ a[href]:hover {
   justify-self: center;
 }
 
+.section__title {
+  font-family: KarmillaBold;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: colour(deep-orange);
+}
+
+/* Contact form */
+
+form {
+  display: grid;
+  max-width: 75vw;
+  margin: auto;
+}
+
+input[type="text"] {
+  font-family: "KarmillaRegular";
+  background-color: colour(tinted-white);
+  color: colour(midnight-blue);
+  border-style: none;
+  border-radius: 4px;
+  height: 2rem;
+  font-size: 20px;
+  text-indent: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: colour(grey-blue);
+}
+
+input[type="submit"] {
+  background-color: #c792ea;
+  color: colour(midnight-blue);
+  border: none;
+  font-family: "KarmillaBold";
+  font-size: 1.2rem;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+textarea {
+  font-family: "KarmillaRegular";
+  border-style: none;
+  border-radius: 4px;
+  background-color: colour(tinted-white);
+  color: colour(midnight-blue);
+  font-size: 20px;
+  text-indent: 6px;
+}

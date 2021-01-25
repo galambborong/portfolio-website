@@ -19,7 +19,7 @@ body {
 /* Anchor tag stylings */
 a {
   text-decoration: none;
-  color: #f78c5b;
+  color: #ffcb6b;
 }
 
 a[href]:hover {
@@ -28,6 +28,10 @@ a[href]:hover {
   border: dashed 1px #919494;
   transition-property: all;
   transition-duration: 250ms;
+}
+
+p {
+  margin: 20px 0;
 }
 
 .external a:after {
@@ -47,6 +51,10 @@ a[href]:hover {
 
 .first {
   color: #ffcb6b;
+}
+
+.second {
+  color: #f78c5b;
 }
 
 /* Navigation here */
@@ -191,6 +199,56 @@ a[href]:hover {
 
 .tech__icons {
   justify-self: center;
+}
+
+.section__title {
+  font-family: KarmillaBold;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: #f78c5b;
+}
+
+/* Contact form */
+form {
+  display: grid;
+  max-width: 75vw;
+  margin: auto;
+}
+
+input[type=text] {
+  font-family: "KarmillaRegular";
+  background-color: #eeffff;
+  color: #292d3e;
+  border-style: none;
+  border-radius: 4px;
+  height: 2rem;
+  font-size: 20px;
+  text-indent: 6px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #595e72;
+}
+
+input[type=submit] {
+  background-color: #c792ea;
+  color: #292d3e;
+  border: none;
+  font-family: "KarmillaBold";
+  font-size: 1.2rem;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+textarea {
+  font-family: "KarmillaRegular";
+  border-style: none;
+  border-radius: 4px;
+  background-color: #eeffff;
+  color: #292d3e;
+  font-size: 20px;
+  text-indent: 6px;
 }
 
 /*# sourceMappingURL=main.css.map */
