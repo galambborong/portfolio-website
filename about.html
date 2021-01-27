@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About me</title>
-  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
   <script src="https://kit.fontawesome.com/26e6f380d4.js" crossorigin="anonymous"></script>
@@ -13,10 +13,10 @@
 
 <body>
   <nav class="menu">
-    <button class="menu__btn--left">
+    <button class="menu__btn btn--left">
       <a href="./index.html"><span class="first">p</span><span class="second">k</span></a>
     </button>
-    <button class="menu__btn--right hamburger" id="hamburger" title="Navigate this site">
+    <button class="menu__btn btn--right hamburger" id="hamburger" title="Navigate this site">
       &#9776;
     </button>
     <ul class="menu__list" id="nav-items">
@@ -28,33 +28,33 @@
 
   <main>
     <header class="header">
-      <h1 class="header__main">About me</h1>
+      <h1 class="header__title">About me</h1>
       <img id="pk" src="./images/peter-keenan.jpeg" alt="Photograph taken from the side of Peter Keenan in a woods" />
       <h2 class="header__sub">Musician-turned-coder</h2>
     </header>
-    <section id="about-me">
-      <p>
+    <section class="section" id="about-me">
+      <p class="section__blurb">
         I trained as a musician and musicologist. I am now changing career
         path and pursuing my interest in logic and coding. In January 2021, I
         begin a full-stack developer course with
         <a href="https://northcoders.com/" class="external" target="_blank" rel="noopener noreferrer">Northcoders.</a>
       </p>
-      <p>
+      <p class="section__blurb">
         I'm a fairly longstanding Linux user and suppose that was my 'gateway
         drug' to coding. I'm a big believer in free and open source software.
       </p>
-      <p>
+      <p class="section__blurb">
         Since getting into coding, I've explored the languages below. The
         'skill IQs' are from my Pluralsight profile:
       </p>
-      <ul>
+      <ul class="section__list">
         <li>JavaScript&ensp;<small>(162, proficient)</small></li>
         <li>Python&ensp;<small>(179, proficient)</small></li>
         <li>C#&ensp;<small>(173, proficient)</small></li>
         <li>Haskell</li>
       </ul>
-      <p>I've also learned the following technologies to some degree:</p>
-      <ul>
+      <p class="section__blurb">I've also learned the following technologies to some degree:</p>
+      <ul class="section__list">
         <li>Git&ensp;<small>(245, expert)</small></li>
         <li>Docker&ensp;<small>(124, proficient)</small></li>
         <li>ASP.NET&ensp;<small>(131, proficient)</small></li>
@@ -65,8 +65,8 @@
         <li>HTML</li>
         <li>CSS</li>
       </ul>
-      <p>
-        I fuel my coding with plenty of fresaccenty brewed coffee from my
+      <p class="section__blurb">
+        I fuel my coding with plenty of freshly brewed coffee from my
         Bialetti Moka Express, and - when possible - like to ride my bikes.
       </p>
     </section>

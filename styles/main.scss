@@ -50,16 +50,17 @@ a[href]:hover {
   transition-duration: 250ms;
 }
 
-p {
-  margin: 20px 0;
-}
-.external a:after {
+.external::after {
   font-family: "FontAwesome";
   content: "\f08e";
   padding-left: 0.5rem;
   padding-right: 0.2rem;
   font-size: 0.7rem;
   vertical-align: 0.1rem;
+}
+
+p {
+  margin: 20px 0;
 }
 
 /* Miscellaneous stylings */
@@ -138,7 +139,6 @@ p {
 
 .header__title {
   font-size: 3rem;
-  padding-top: 3rem;
   margin: 2rem 0;
 }
 
@@ -223,11 +223,19 @@ p {
   justify-self: center;
 }
 
+
+/* General section */
+
 .section__title {
   font-family: KarmillaBold;
   font-size: 1.5rem;
   margin: 1.5rem 0;
   color: colour(deep-orange);
+}
+
+.section__list {
+  padding-inline-start: 2rem;
+  line-height: 1.2;
 }
 
 /* Contact form */
@@ -272,4 +280,18 @@ textarea {
   color: colour(midnight-blue);
   font-size: 20px;
   text-indent: 6px;
+}
+
+.code {
+  width: fit-content;
+  background-color: colour(light-blue);
+  border: 1px solid #eeffff;
+  padding: 1rem;
+  line-height: 1;
+}
+
+.code__block {
+  font-family: mononokiRegular;
+  font-size: 0.9rem;
+  line-height: 1;
 }
