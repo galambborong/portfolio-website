@@ -160,10 +160,24 @@ p {
 /* Repo link styling */
 .repo-info {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
+  /*auto;*/
   margin: 1rem;
   place-items: center;
+}
+
+.repo-info__btn {
+  background-color: #292d3e;
+  border: 1px solid #eeffff;
+  color: #eeffff;
   font-family: mononokiRegular;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.repo-info__btn a {
+  color: #eeffff;
 }
 
 .repo-info__cta {

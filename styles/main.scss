@@ -182,10 +182,23 @@ p {
 
 .repo-info {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto; /*auto;*/
   margin: 1rem;
   place-items: center;
+}
+
+.repo-info__btn {
+  background-color: colour(midnight-blue);
+  border: 1px solid colour(tinted-white);
+  color: colour(tinted-white);
   font-family: mononokiRegular;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.repo-info__btn a {
+  color: colour(tinted-white);
 }
 
 .repo-info__cta {
