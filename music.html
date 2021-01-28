@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Music</title>
-  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
   <script src="https://kit.fontawesome.com/26e6f380d4.js" crossorigin="anonymous"></script>
@@ -13,10 +13,10 @@
 
 <body>
   <nav class="menu">
-    <button class="menu__btn--left">
+    <button class="menu__btn btn--left">
       <a href="./index.html"><span class="first">p</span><span class="second">k</span></a>
     </button>
-    <button class="menu__btn--right hamburger" id="hamburger" title="Navigate this site">
+    <button class="menu__btn btn--right hamburger" id="hamburger" title="Navigate this site">
       &#9776;
     </button>
     <ul class="menu__list" id="nav-items">
@@ -28,22 +28,22 @@
 
   <main>
     <header class="header">
-      <h1 class="header__main">My musical activities</h1>
+      <h1 class="header__title">My musical activities</h1>
       <h2 class="header__sub">A brief summary</h2>
     </header>
 
-    <section id="performer">
-      <h3>Performing</h3>
-      <p>
+    <section class="section" id="performer">
+      <h3 class="section__title">Performing</h3>
+      <p class="section__blurb">
         I work in various contexts as a conductor/music director. I founded
-        <a href="https://operadeilumi.org.uk" target="_blank" rel="noopener noreferrer">Opera dei Lumi</a>
+        <a href="https://operadeilumi.org.uk" class="external" target="_blank" rel="noopener noreferrer">Opera dei Lumi</a>
         and am Music Director of
-        <a href="#" target="_blank" rel="noopener noreferrer">Northern Praeclassica</a>.
+        <a href="https://northernpraeclassica.weebly.com/index.html" class="external" target="_blank" rel="noopener noreferrer">Northern Praeclassica</a>.
       </p>
     </section>
-    <section id="research">
-      <h3>Research</h3>
-      <p>
+    <section class="section" id="research">
+      <h3 class="section__title">Research</h3>
+      <p class="section__blurb">
         I researched Mozart's temporal strategies as part of my MMus(R)
         degree. I have written reviews and articles for a number of
         organisations, recently the <i>Eighteenth-Century Music</i> journal,
@@ -52,13 +52,13 @@
         Mass, K427, with a particular emphasis on English.
       </p>
       <p>
-        <a href="https://orcid.org/0000-0001-6603-7920" target="_blank" rel="noopener noreferrer">See my ORCID profile
+        <a href="https://orcid.org/0000-0001-6603-7920" class="external" target="_blank" rel="noopener noreferrer">See my ORCID profile
           here</a>
       </p>
     </section>
-    <section id="engraver">
-      <h3>Music engraving</h3>
-      <p>
+    <section class="section" id="engraver">
+      <h3 class="section__title">Music engraving</h3>
+      <p class="section__blurb">
         I previously worked as a music engraver using SCORE. I worked for a
         range of individuals, including composers Thomas Simaku and Nigel
         Osborne, as well as publishers such as Edition Wilhelm Hansen and
