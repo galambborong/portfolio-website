@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coding</title>
-  <!-- <link rel="stylesheet" href="/styles/style.css" /> -->
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-    integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous" />
+  <meta name="author" content="Peter Keenan / galambborong">
+  <meta name="description" content="Peter Keenan. Training full stack developer and musician">
+  <title>Peter Keenan &#8226; Coding projects</title>
+  <link rel="stylesheet" href="/styles/main.css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/mononoki" type="text/css" />
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/karmilla" type="text/css" />
-  <!-- <script src="https://kit.fontawesome.com/26e6f380d4.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+    integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -34,7 +34,7 @@
       <h1 class="header__title">Coding</h1>
       <h2 class="header__sub">A brief overview of my coding projects</h2>
     </header>
-    <section class="card-holder">
+    <section class="card-holder card-holder--main">
       <!-- card one begin -->
       <article class="card" id="pk-website">
         <h3 class="card__title">portfolio website</h3>
@@ -45,7 +45,8 @@
           <li class="tech__icons"><i class="fa fa-sass-alt"></i></li>
         </ul>
         <p class="card__desc">
-          This responsive and accessible website, designed following a mobile-first approach using
+          This responsive and accessible website, designed following a
+          mobile-first approach using
           <span class="accent">HTML</span>,
           <span class="accent">CSS</span> and
           <span class="accent">JavaScript</span>.
@@ -57,7 +58,6 @@
             </a>
           </button>
         </div>
-
       </article>
       <!-- card two begin -->
       <article class="card" id="xscor">
@@ -122,17 +122,21 @@
     <header class="header">
       <h2 class="header__sub">Related projects</h2>
     </header>
-    <section class="card-holder">
+    <section class="card-holder card-holder--extra">
       <!-- dotfiles card -->
       <article class="card" id="dotfiles">
         <h3 class="card__title">dotfiles</h3>
         <ul class="tech">
           <li class="tech__icons"><i class="fa fa-linux"></i></li>
-          <li class="tech__icons"><i class="fa fa-archlinux" aria-hidden="true"></i></li>
+          <li class="tech__icons">
+            <i class="fa fa-archlinux" aria-hidden="true"></i>
+          </li>
         </ul>
         <p class="card__desc">
-          My personal dotfiles, featuring my ongoing configurations of <span class="accent">XMonad</span>, <span
-            class="accent">Emacs</span>, <span class="accent">Vim</span>, and various other programs
+          My personal dotfiles, featuring my ongoing configurations of
+          <span class="accent">XMonad</span>,
+          <span class="accent">Emacs</span>, <span class="accent">Vim</span>,
+          and various other programs
         </p>
         <div class="repo-info">
           <button class="repo-info__btn">
@@ -150,7 +154,8 @@
           <li class="tech__icons"><i class="fa fa-linode"></i></li>
         </ul>
         <p class="card__desc">
-          I host my own <span class="accent">Git</span> server on my <span class="accent">Linode</span> VPS.
+          I host my own <span class="accent">Git</span> server on my
+          <span class="accent">Linode</span> VPS.
         </p>
       </article>
       <article class="card" id="st">
@@ -161,7 +166,9 @@
       <article class="card" id="old-website">
         <h3 class="card__title">Previous personal website</h3>
         <ul class="tech">
-          <li class="tech__icons"><i class="fa fa-python" aria-hidden="true"></i></li>
+          <li class="tech__icons">
+            <i class="fa fa-python" aria-hidden="true"></i>
+          </li>
         </ul>
         <p class="card__desc">
           A previous personal website written in

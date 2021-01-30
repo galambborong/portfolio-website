@@ -51,7 +51,7 @@ a[href]:hover {
 }
 
 .external::after {
-  font-family: "FontAwesome";
+  font-family: "ForkAwesome";
   content: "\f08e";
   padding-left: 0.5rem;
   padding-right: 0.2rem;
@@ -399,6 +399,56 @@ textarea {
 }
 
 /* Main media queries */
+
+@media screen and (min-width: 900px) {
+  .card-holder--main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      "card1 card1 card4"
+      "card3 card2 card2";
+  }
+  #pk-website {
+    grid-area: card1;
+  }
+
+  #xscor {
+    grid-area: card2;
+  }
+
+  #asp-website {
+    grid-area: card3;
+  }
+
+  #scraper {
+    grid-area: card4;
+  }
+
+  .card-holder--extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto);
+    grid-template-areas:
+      "card1 card2 card2"
+      "card1 card3 card4";
+  }
+  #dotfiles {
+    grid-area: card1;
+  }
+
+  #git-server {
+    grid-area: card3;
+  }
+
+  #old-website {
+    grid-area: card2;
+  }
+
+  #st {
+    grid-area: card4;
+  }
+}
 
 @media screen and (max-width: 900px) {
   .card-holder {
