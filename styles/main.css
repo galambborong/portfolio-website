@@ -43,7 +43,7 @@ p {
   margin: 20px 0;
 }
 
-/* Miscellaneous stylings */
+/* Miscellaneous general stylings */
 .accent {
   color: #c3e872;
   font-weight: 500;
@@ -64,6 +64,10 @@ p {
   display: grid;
   grid-template-columns: 1fr auto;
   color: #ffcb6b;
+}
+
+.menu--hero {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .menu__btn {
@@ -127,6 +131,19 @@ p {
   margin: 1.625rem 0;
 }
 
+/* General sections */
+.section__title {
+  font-family: KarmillaBold;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: #f78c5b;
+}
+
+.section__list {
+  padding-inline-start: 2rem;
+  line-height: 1.2;
+}
+
 /* Project cards */
 .card-holder {
   display: grid;
@@ -155,6 +172,29 @@ p {
 
 .card__desc {
   margin: 1rem;
+}
+
+/* Hero page */
+.hero {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.hero-header {
+  font-family: mononokiRegular;
+}
+
+.hero-header__title {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.menu__list--hero {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(109.6px, 1fr));
+  place-items: center;
 }
 
 /* Repo link styling */
@@ -212,19 +252,6 @@ p {
 
 .tech__icons {
   justify-self: center;
-}
-
-/* General section */
-.section__title {
-  font-family: KarmillaBold;
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
-  color: #f78c5b;
-}
-
-.section__list {
-  padding-inline-start: 2rem;
-  line-height: 1.2;
 }
 
 /* Contact form */
