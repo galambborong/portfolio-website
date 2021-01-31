@@ -3,6 +3,8 @@
 
 ** About
 
-This portfolio website is being build as part of my precourse for a Northcoders bootcamp. The aim is to produce an accessible and responsive site to showcase my ongoing projects. 
+This website was created as part of my precourse material for my [[https://northcoders.com][Northcoders]] bootcamp. 
 
-No frameworks are being used; it's just standard HTML, CSS and JavaScript.
+The site was built following a 'mobile-first' approach. It is fully responsive and accessible. 
+
+Its first draft was created using only HTML, CSS and a very basic use of JavaScript. I have now moved all the CSS over to SASS. Through this process, I fully overhauled the class namings to follow the [[http://getbem.com/][BEM]] convention. 
