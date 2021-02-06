@@ -239,8 +239,6 @@ img {
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
-  // grid-template-columns: repeat(auto-fill, minmax(109.6px, 1fr));
-  // grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
   place-items: center;
 }
 
@@ -262,17 +260,23 @@ img {
     font-size: 1.25rem;
   }
 }
+
+@media screen and (max-height: 869px) {
+  .header__sub--hero {
+    font-size: 1.75rem;
+  }
+  .header__strapline {
+    display: none
+  }
+}
+
 .social-media {
   display: grid;
-  // padding-inline-start: 0px;
-  // place-items: center;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 3rem;
 }
 
 .social-media__item {
-  // color: colour(tinted-white);
-  // padding-inline-start: 0px;
   list-style-type: none;
   padding: 1rem;
   font-size: 2rem;
