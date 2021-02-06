@@ -236,6 +236,11 @@ img {
     font-size: 1.25rem;
   }
 }
+@media screen and (max-height: 700px) {
+  .header__strapline {
+    display: none;
+  }
+}
 .social-media {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
