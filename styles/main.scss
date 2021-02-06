@@ -261,7 +261,10 @@ img {
   }
 }
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 869px) {
+  .header__sub--hero {
+    font-size: 1.75rem;
+  }
   .header__strapline {
     display: none
   }
