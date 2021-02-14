@@ -99,7 +99,7 @@ img {
 
 .menu__btn {
   background-color: colour(midnight-blue);
-  font-family: mononokiBold;
+  font-family: mononokiBold, monospace;
   font-size: 2rem;
   border-style: none;
 }
@@ -125,7 +125,7 @@ img {
   font-size: 2rem;
   text-transform: lowercase;
   float: right;
-  font-family: mononokiBold;
+  font-family: mononokiBold, monospace;
   justify-self: end;
 }
 
@@ -158,7 +158,7 @@ img {
 }
 
 .header__sub--hero {
-  font-family: mononokiItalic;
+  font-family: mononokiItalic, monospace;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -167,7 +167,7 @@ img {
   background-color: colour(light-blue);
   border: 1px solid colour(tinted-white);
   padding: 1rem;
-  font-family: mononokiBold;
+  font-family: mononokiBold, monospace;
   text-align: center;
   margin: 1.5rem 0;
 }
@@ -207,7 +207,7 @@ img {
 .card__title {
   font-size: 1.5rem;
   text-align: center;
-  font-family: mononokiBold;
+  font-family: mononokiBold, monospace;
   color: colour(dark-green);
   margin: 1rem;
   text-transform: lowercase;
@@ -226,7 +226,7 @@ img {
 }
 
 .header--hero {
-  font-family: mononokiBold;
+  font-family: mononokiBold, monospace;
   text-align: center;
 }
 
@@ -299,7 +299,7 @@ img {
   background-color: colour(midnight-blue);
   border: 1px solid colour(tinted-white);
   color: colour(tinted-white);
-  font-family: mononokiRegular;
+  font-family: mononokiRegular, monospace;
   font-size: 1rem;
   padding: 10px;
   cursor: pointer;
@@ -397,7 +397,7 @@ textarea {
 }
 
 .code__block {
-  font-family: mononokiRegular;
+  font-family: mononokiRegular, monospace;
   font-size: 0.9rem;
   line-height: 1;
 }
