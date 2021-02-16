@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "mononokiRegular";
+  src: ("./fonts/mononoki/mononoki-Regular.woff2");
+}
+
+@font-face {
+  font-family: "mononokiBold";
+  src: ("./fonts/mononoki/mononoki-Bold.woff2");
+}
+
+@font-face {
+  font-family: "mononokiItalic";
+  src: ("./fonts/mononoki/mononoki-Italic.woff2");
+}
+
+@font-face {
+  font-family: "karmillaRegular";
+  src: ("./fonts/karmilla/karmilla-regular.woff2");
+}
+
+@font-face {
+  font-family: "karmillaBold";
+  src: ("./fonts/karmilla/karmilla-bold.woff2");
+}
+
 $colours: (
   muted-grey: #919494,
   darkest-blue: #212532,
@@ -29,7 +54,7 @@ body {
   max-width: 900px;
   margin: auto;
   color: colour(tinted-white);
-  font-family: KarmillaRegular;
+  font-family: karmillaRegular;
   font-size: 20px;
   line-height: 1.618;
   padding: 1.618em;
@@ -142,7 +167,7 @@ img {
 .header {
   display: block;
   height: 40%;
-  font-family: KarmillaBold;
+  font-family: karmillaBold;
   text-align: center;
 }
 
@@ -175,7 +200,7 @@ img {
 /* General sections */
 
 .section__title {
-  font-family: KarmillaBold;
+  font-family: karmillaBold;
   font-size: 1.5rem;
   margin: 1.5rem 0;
   color: colour(deep-orange);
@@ -266,7 +291,7 @@ img {
     font-size: 1.75rem;
   }
   .header__strapline {
-    display: none
+    display: none;
   }
 }
 
@@ -353,7 +378,7 @@ form {
 }
 
 input[type="text"] {
-  font-family: "KarmillaRegular";
+  font-family: "karmillaRegular";
   background-color: colour(tinted-white);
   color: colour(midnight-blue);
   border-style: none;
@@ -372,14 +397,14 @@ input[type="submit"] {
   background-color: #c792ea;
   color: colour(midnight-blue);
   border: none;
-  font-family: "KarmillaBold";
+  font-family: "karmillaBold";
   font-size: 1.2rem;
   border-radius: 4px;
   height: 2rem;
 }
 
 textarea {
-  font-family: "KarmillaRegular";
+  font-family: "karmillaRegular";
   border-style: none;
   border-radius: 4px;
   background-color: colour(tinted-white);
