@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "mononokiRegular";
-  src: "/styles/fonts/mononoki/mononoki-Regular.woff2";
+  src: "/styles/fonts/mononoki/mononoki-Regular.woff2" format("woff");
 }
 @font-face {
   font-family: "mononokiBold";
@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: "karmillaRegular";
-  src: "/styles/fonts/karmilla/karmilla-regular.woff2";
+  src: "/styles/fonts/karmilla/karmilla-regular.woff2" format("woff");
 }
 @font-face {
   font-family: "karmillaBold";
