@@ -1,23 +1,38 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "mononokiRegular";
-  src: "/styles/fonts/mononoki/mononoki-Regular.woff2" format("woff");
-}
-@font-face {
-  font-family: "mononokiBold";
-  src: "/styles/fonts/mononoki/mononoki-Bold.woff2";
-}
-@font-face {
-  font-family: "mononokiItalic";
-  src: "/styles/fonts/mononoki/mononoki-Italic.woff2";
+  font-family: "karmillaBold";
+  src: url("./fonts/karmilla/karmilla-bold-015-webfont.eot");
+  src: url("./fonts/karmilla/karmilla-bold-015-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/karmilla/karmilla-bold-015-webfont.woff2") format("woff2"), url("./fonts/karmilla/karmilla-bold-015-webfont.woff") format("woff"), url("./fonts/karmilla/karmilla-bold-015-webfont.ttf") format("truetype"), url("./fonts/karmilla/karmilla-bold-015-webfont.svg#karmillabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "karmillaRegular";
-  src: "/styles/fonts/karmilla/karmilla-regular.woff2" format("woff");
+  src: url("./fonts/karmilla/karmilla-regular-015-webfont.eot");
+  src: url("./fonts/karmilla/karmilla-regular-015-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/karmilla/karmilla-regular-015-webfont.woff2") format("woff2"), url("./fonts/karmilla/karmilla-regular-015-webfont.woff") format("woff"), url("./fonts/karmilla/karmilla-regular-015-webfont.ttf") format("truetype"), url("./fonts/karmilla/karmilla-regular-015-webfont.svg#karmillaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "karmillaBold";
-  src: "/styles/fonts/karmilla/karmilla-bold.woff2";
+  font-family: "mononokiRegular";
+  src: url("./fonts/mononoki/mononoki-Regular.eot");
+  src: url("./fonts/mononoki/mononoki-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/mononoki/mononoki-Regular.woff2") format("woff2"), url("./fonts/mononoki/mononoki-Regular.woff") format("woff"), url("./fonts/mononoki/mononoki-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mononokiBold";
+  src: url("./fonts/mononoki/mononoki-Bold.eot");
+  src: url("./fonts/mononoki/mononoki-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/mononoki/mononoki-Bold.woff2") format("woff2"), url("./fonts/mononoki/mononoki-Bold.woff") format("woff"), url("./fonts/mononoki/mononoki-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mononokiItalic";
+  src: url("./fonts/mononoki/mononoki-Italic.eot");
+  src: url("./fonts/mononoki/mononoki-Italic.eot?#iefix") format("embedded-opentype"), url("./fonts/mononoki/mononoki-Italic.woff2") format("woff2"), url("./fonts/mononoki/mononoki-Italic.woff") format("woff"), url("./fonts/mononoki/mononoki-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }
 * {
   margin: 0;
