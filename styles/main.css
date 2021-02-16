@@ -1,23 +1,23 @@
 @charset "UTF-8";
 @font-face {
   font-family: "mononokiRegular";
-  src: "./fonts/mononoki/mononoki-Regular.woff2";
+  src: "/styles/fonts/mononoki/mononoki-Regular.woff2";
 }
 @font-face {
   font-family: "mononokiBold";
-  src: "./fonts/mononoki/mononoki-Bold.woff2";
+  src: "/styles/fonts/mononoki/mononoki-Bold.woff2";
 }
 @font-face {
   font-family: "mononokiItalic";
-  src: "./fonts/mononoki/mononoki-Italic.woff2";
+  src: "/styles/fonts/mononoki/mononoki-Italic.woff2";
 }
 @font-face {
   font-family: "karmillaRegular";
-  src: "./fonts/karmilla/karmilla-regular.woff2";
+  src: "/styles/fonts/karmilla/karmilla-regular.woff2";
 }
 @font-face {
   font-family: "karmillaBold";
-  src: "./fonts/karmilla/karmilla-bold.woff2";
+  src: "/styles/fonts/karmilla/karmilla-bold.woff2";
 }
 * {
   margin: 0;
