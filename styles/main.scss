@@ -1,63 +1,63 @@
 @font-face {
-  font-family: "karmillaBold";
-  src: url("./fonts/karmilla/karmilla-bold-015-webfont.eot");
-  src: url("./fonts/karmilla/karmilla-bold-015-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/karmilla/karmilla-bold-015-webfont.woff2") format("woff2"),
-    url("./fonts/karmilla/karmilla-bold-015-webfont.woff") format("woff"),
-    url("./fonts/karmilla/karmilla-bold-015-webfont.ttf") format("truetype"),
-    url("./fonts/karmilla/karmilla-bold-015-webfont.svg#karmillabold")
-      format("svg");
+  font-family: 'karmillaBold';
+  src: url('./fonts/karmilla/karmilla-bold-015-webfont.eot');
+  src: url('./fonts/karmilla/karmilla-bold-015-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/karmilla/karmilla-bold-015-webfont.woff2') format('woff2'),
+    url('./fonts/karmilla/karmilla-bold-015-webfont.woff') format('woff'),
+    url('./fonts/karmilla/karmilla-bold-015-webfont.ttf') format('truetype'),
+    url('./fonts/karmilla/karmilla-bold-015-webfont.svg#karmillabold')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "karmillaRegular";
-  src: url("./fonts/karmilla/karmilla-regular-015-webfont.eot");
-  src: url("./fonts/karmilla/karmilla-regular-015-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/karmilla/karmilla-regular-015-webfont.woff2") format("woff2"),
-    url("./fonts/karmilla/karmilla-regular-015-webfont.woff") format("woff"),
-    url("./fonts/karmilla/karmilla-regular-015-webfont.ttf") format("truetype"),
-    url("./fonts/karmilla/karmilla-regular-015-webfont.svg#karmillaregular")
-      format("svg");
+  font-family: 'karmillaRegular';
+  src: url('./fonts/karmilla/karmilla-regular-015-webfont.eot');
+  src: url('./fonts/karmilla/karmilla-regular-015-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/karmilla/karmilla-regular-015-webfont.woff2') format('woff2'),
+    url('./fonts/karmilla/karmilla-regular-015-webfont.woff') format('woff'),
+    url('./fonts/karmilla/karmilla-regular-015-webfont.ttf') format('truetype'),
+    url('./fonts/karmilla/karmilla-regular-015-webfont.svg#karmillaregular')
+      format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "mononokiRegular";
-  src: url("./fonts/mononoki/mononoki-Regular.eot");
-  src: url("./fonts/mononoki/mononoki-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/mononoki/mononoki-Regular.woff2") format("woff2"),
-    url("./fonts/mononoki/mononoki-Regular.woff") format("woff"),
-    url("./fonts/mononoki/mononoki-Regular.ttf") format("truetype");
+  font-family: 'mononokiRegular';
+  src: url('./fonts/mononoki/mononoki-Regular.eot');
+  src: url('./fonts/mononoki/mononoki-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/mononoki/mononoki-Regular.woff2') format('woff2'),
+    url('./fonts/mononoki/mononoki-Regular.woff') format('woff'),
+    url('./fonts/mononoki/mononoki-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "mononokiBold";
-  src: url("./fonts/mononoki/mononoki-Bold.eot");
-  src: url("./fonts/mononoki/mononoki-Bold.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/mononoki/mononoki-Bold.woff2") format("woff2"),
-    url("./fonts/mononoki/mononoki-Bold.woff") format("woff"),
-    url("./fonts/mononoki/mononoki-Bold.ttf") format("truetype");
+  font-family: 'mononokiBold';
+  src: url('./fonts/mononoki/mononoki-Bold.eot');
+  src: url('./fonts/mononoki/mononoki-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/mononoki/mononoki-Bold.woff2') format('woff2'),
+    url('./fonts/mononoki/mononoki-Bold.woff') format('woff'),
+    url('./fonts/mononoki/mononoki-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "mononokiItalic";
-  src: url("./fonts/mononoki/mononoki-Italic.eot");
-  src: url("./fonts/mononoki/mononoki-Italic.eot?#iefix")
-      format("embedded-opentype"),
-    url("./fonts/mononoki/mononoki-Italic.woff2") format("woff2"),
-    url("./fonts/mononoki/mononoki-Italic.woff") format("woff"),
-    url("./fonts/mononoki/mononoki-Italic.ttf") format("truetype");
+  font-family: 'mononokiItalic';
+  src: url('./fonts/mononoki/mononoki-Italic.eot');
+  src: url('./fonts/mononoki/mononoki-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('./fonts/mononoki/mononoki-Italic.woff2') format('woff2'),
+    url('./fonts/mononoki/mononoki-Italic.woff') format('woff'),
+    url('./fonts/mononoki/mononoki-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
@@ -75,7 +75,7 @@ $colours: (
   giro-pink: #c792ea,
   susanna-blue: #55a8ec,
   lightest-blue: #bed6ff,
-  grey-blue: #595e72,
+  grey-blue: #595e72
 );
 
 @function colour($colour-name) {
@@ -115,8 +115,8 @@ a[href]:hover {
 }
 
 .external::after {
-  font-family: "ForkAwesome";
-  content: "\f08e";
+  font-family: 'ForkAwesome';
+  content: '\f08e';
   padding-left: 0.5rem;
   padding-right: 0.2rem;
   font-size: 0.7rem;
@@ -354,7 +354,7 @@ img {
 
 .repo-info {
   display: grid;
-  grid-template-columns: auto; /*auto;*/
+  grid-template-columns: 1fr, 1fr; /*auto;*/
   margin: 1rem;
   place-items: center;
 }
@@ -416,8 +416,8 @@ form {
   margin: auto;
 }
 
-input[type="text"] {
-  font-family: "karmillaRegular";
+input[type='text'] {
+  font-family: 'karmillaRegular';
   background-color: colour(tinted-white);
   color: colour(midnight-blue);
   border-style: none;
@@ -432,18 +432,18 @@ textarea::placeholder {
   color: colour(grey-blue);
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: #c792ea;
   color: colour(midnight-blue);
   border: none;
-  font-family: "karmillaBold";
+  font-family: 'karmillaBold';
   font-size: 1.2rem;
   border-radius: 4px;
   height: 2rem;
 }
 
 textarea {
-  font-family: "karmillaRegular";
+  font-family: 'karmillaRegular';
   border-style: none;
   border-radius: 4px;
   background-color: colour(tinted-white);
@@ -474,8 +474,8 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto);
     grid-template-areas:
-      "card1 card1 card4"
-      "card3 card2 card2";
+      'card1 card1 card4'
+      'card2 card3 card3';
   }
   #pk-website {
     grid-area: card1;
@@ -485,7 +485,7 @@ textarea {
     grid-area: card2;
   }
 
-  #asp-website {
+  #node-api {
     grid-area: card3;
   }
 
@@ -498,8 +498,8 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto);
     grid-template-areas:
-      "card1 card2 card2"
-      "card1 card3 card4";
+      'card1 card2 card2'
+      'card1 card3 card4';
   }
   #dotfiles {
     grid-area: card1;

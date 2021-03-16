@@ -299,7 +299,7 @@ img {
 /* Repo link styling */
 .repo-info {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr, 1fr;
   /*auto;*/
   margin: 1rem;
   place-items: center;
@@ -416,7 +416,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto);
-    grid-template-areas: "card1 card1 card4" "card3 card2 card2";
+    grid-template-areas: "card1 card1 card4" "card2 card3 card3";
   }
 
   #pk-website {
@@ -427,7 +427,7 @@ textarea {
     grid-area: card2;
   }
 
-  #asp-website {
+  #node-api {
     grid-area: card3;
   }
 
