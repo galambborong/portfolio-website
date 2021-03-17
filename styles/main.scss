@@ -354,7 +354,14 @@ img {
 
 .repo-info {
   display: grid;
-  grid-template-columns: 1fr, 1fr; /*auto;*/
+  grid-template-columns: auto;
+  margin: 1rem;
+  place-items: center;
+}
+
+.repo-info--two-stack {
+  display: grid;
+  grid-template-columns: auto auto;
   margin: 1rem;
   place-items: center;
 }
@@ -492,28 +499,27 @@ textarea {
   #scraper {
     grid-area: card4;
   }
-
   .card-holder--extra {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto);
     grid-template-areas:
-      'card1 card2 card2'
-      'card1 card3 card4';
+      'card2 card1 card1'
+      'card4 card4 card3';
   }
   #dotfiles {
     grid-area: card1;
-  }
-
-  #git-server {
-    grid-area: card3;
   }
 
   #old-website {
     grid-area: card2;
   }
 
-  #st {
+  #git-server {
+    grid-area: card3;
+  }
+
+  #asp-website {
     grid-area: card4;
   }
 }
