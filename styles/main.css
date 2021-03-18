@@ -347,12 +347,8 @@ img {
 
 /* Card icons */
 .tech {
-  display: inline-grid;
-  width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  list-style-type: none;
-  color: #55a8ec;
-  font-size: 1.6rem;
+  padding-inline-start: 2.5rem;
+  line-height: 1.2;
 }
 
 .tech__icons {

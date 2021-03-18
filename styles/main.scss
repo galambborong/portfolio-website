@@ -132,6 +132,7 @@ img {
   margin: 0 auto;
 }
 
+
 /* Miscellaneous general stylings */
 
 .accent {
@@ -281,6 +282,8 @@ img {
   margin: 1rem;
 }
 
+
+
 /* Hero page */
 
 .hero {
@@ -402,14 +405,21 @@ img {
 
 /* Card icons */
 
+
 .tech {
-  display: inline-grid;
-  width: 100%;
-  grid-template-columns: repeat(4, 1fr);
-  list-style-type: none;
-  color: colour(susanna-blue);
-  font-size: 1.6rem;
+  padding-inline-start: 2.5rem;
+  // list-style-type: none;
+  line-height: 1.2;
 }
+
+// .tech {
+//   display: inline-grid;
+//   width: 100%;
+//   grid-template-columns: repeat(4, 1fr);
+//   list-style-type: none;
+//   color: colour(susanna-blue);
+//   font-size: 1.6rem;
+// }
 
 .tech__icons {
   justify-self: center;
