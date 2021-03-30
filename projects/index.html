@@ -1,202 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Peter Keenan / galambborong" />
+    <meta
+      name="description"
+      content="Peter Keenan. Training full stack developer and musician"
+    />
+    <title>Peter Keenan &#8226; Coding projects</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Peter Keenan / galambborong">
-  <meta name="description" content="Peter Keenan. Training full stack developer and musician">
-  <title>Peter Keenan &#8226; Coding projects</title>
-  <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-    integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous" />
-</head>
+  <body>
+    <nav class="menu">
+      <button class="menu__btn btn--left">
+        <a href="/"
+          ><span class="first">p</span><span class="second">k</span></a
+        >
+      </button>
+      <button
+        class="menu__btn btn--right hamburger"
+        id="hamburger"
+        title="Navigate this site"
+      >
+        &#9776;
+      </button>
+      <ul class="menu__list" id="nav-items">
+        <li class="menu__item"><a href="/about">about</a></li>
+        <li class="menu__item"><a href="/projects">projects</a></li>
+        <li class="menu__item"><a href="/contact">contact</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="menu">
-    <button class="menu__btn btn--left">
-      <a href="/"><span class="first">p</span><span class="second">k</span></a>
-    </button>
-    <button class="menu__btn btn--right hamburger" id="hamburger" title="Navigate this site">
-      &#9776;
-    </button>
-    <ul class="menu__list" id="nav-items">
-      <li class="menu__item"><a href="/about">about</a></li>
-      <li class="menu__item"><a href="/projects">projects</a></li>
-      <li class="menu__item"><a href="/contact">contact</a></li>
-    </ul>
-  </nav>
+    <main>
+      <header class="header">
+        <h1 class="header__title">Coding</h1>
+        <h2 class="header__sub">A brief overview of my coding projects</h2>
+      </header>
+      <section class="card-holder card-holder--main">
+        <!-- card one begin -->
+        <article class="card" id="pk-website">
+          <h3 class="card__title">portfolio website</h3>
+          <p class="card__desc">
+            This <span class="accent">responsive</span> and
+            <span class="accent">accessible</span> website, designed following a
+            <span class="accent">mobile-first</span> approach.
+          </p>
+          <p class="card__desc">Front End Technologies:</p>
+          <ul class="tech">
+            <li>HTML5&emsp;<i class="fa fa-html5"></i></li>
+            <li>CSS3&emsp;<i class="fa fa-css3"></i></li>
+            <li>Sass</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="repo-info">
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/portfolio-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&emsp;<i class="fa fa-github"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+        <!-- card two begin -->
+        <article class="card" id="xscor">
+          <h3 class="card__title">xscor</h3>
+          <p class="card__desc">
+            A program which reads binary SCORE files and outputs their
+            <a
+              href="https://en.wikipedia.org/wiki/SCORE_(software)#Program_use"
+              class="external"
+              target="_blank"
+              rel="noopener noreferrer"
+              >parameter content</a
+            >.
+          </p>
+          <p class="card__desc">Language:</p>
+          <ul class="tech">
+            <li>Python&emsp;<i class="fa fa-python"></i></li>
+          </ul>
+          <div class="repo-info">
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/xscor"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&emsp;<i class="fa fa-github"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+        <!-- card three begin -->
+        <article class="card" id="node-api">
+          <h3 class="card__title">pk-nc-news</h3>
+          <p class="card__desc">
+            Reddit-like back end REST API built following
+            <span class="accent">test-driven development</span> and
+            <span class="accent">MVC</span>
+            principles.
+          </p>
+          <p class="card__desc">Back End Technologies:</p>
+          <ul class="tech">
+            <li>Languages:&emsp;JavaScript</li>
+            <li>Database:&emsp;PostgreSQL</li>
+            <li>Runtime:&emsp;NodeJS, using Express</li>
+            <li>Libraries:&emsp;Node-Postgres, Knex</li>
+            <li>Testing:&emsp;Jest, Supertest</li>
+          </ul>
+          <div class="repo-info--two-stack">
+            <button class="repo-info__btn">
+              <a
+                href="https://pk-nc-news.herokuapp.com/api"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view api&ensp;<i class="fa fa-long-arrow-alt-right"></i>&ensp;<i
+                  class="fa fa-external-link-square"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </button>
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/pk-nc-news"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&ensp;<i class="fa fa-long-arrow-alt-right"></i
+                >&ensp;<i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+        <!-- card four begin -->
+        <article class="card" id="scraper">
+          <h3 class="card__title">Web scraper</h3>
+          <p class="card__desc">
+            Web scraper written in <span class="accent">Python</span> for
+            monitoring 350+ artist pages.
+          </p>
+          <p class="card__desc">Language:</p>
+          <ul class="tech">
+            <li>Python&emsp;<i class="fa fa-python"></i></li>
+          </ul>
+          <div class="repo-info">
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/scraper"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&ensp;<i class="fa fa-long-arrow-alt-right"></i
+                >&ensp;<i class="fa fa-github"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+        <!-- card five begin -->
+        <article class="card" id="gitbiz">
+          <h3 class="card__title">gitbiz</h3>
+          <p class="card__desc">
+            A React app which mocks up a business card for developers.
+          </p>
+          <p class="card__desc">Front End Technologies:</p>
+          <ul class="tech">
+            <li>JavaScript&emsp;<i class="fa fa-python"></i></li>
+          </ul>
+          <div class="repo-info">
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/gitbiz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&emsp;<i class="fa fa-github"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+      </section>
 
-  <main>
-    <header class="header">
-      <h1 class="header__title">Coding</h1>
-      <h2 class="header__sub">A brief overview of my coding projects</h2>
-    </header>
-    <section class="card-holder card-holder--main">
-      <!-- card one begin -->
-      <article class="card" id="pk-website">
-        <h3 class="card__title">portfolio website</h3>
-        <p class="card__desc">
-          This <span class="accent">responsive</span> and <span class="accent">accessible</span> website, designed
-          following a
-          <span class="accent">mobile-first</span> approach.
-        </p>
-        <p class="card__desc">Front End Technologies:</p>
-        <ul class="tech">
-          <li>HTML5&emsp;<i class="fa fa-html5"></i></li>
-          <li>CSS3&emsp;<i class="fa fa-css3"></i></li>
-          <li>Sass</li>
-          <li>JavaScript</li>
-        </ul>
-        <div class="repo-info">
-          <button class="repo-info__btn">
-            <a href="https://github.com/galambborong/portfolio-website" target="_blank" rel="noopener noreferrer">
-              view code&emsp;<i class="fa fa-github"></i>
-            </a>
-          </button>
-        </div>
-      </article>
-      <!-- card two begin -->
-      <article class="card" id="xscor">
-        <h3 class="card__title">xscor</h3>
-        <p class="card__desc">
-          A program which reads binary SCORE files and outputs their
-          <a href="https://en.wikipedia.org/wiki/SCORE_(software)#Program_use" class="external" target="_blank"
-            rel="noopener noreferrer">parameter content</a>.
-        </p>
-        <p class="card__desc">Language:</p>
-        <ul class="tech">
-          <li>Python&emsp;<i class="fa fa-python"></i></li>
-        </ul>
-        <div class="repo-info">
-          <button class="repo-info__btn">
-            <a href="https://github.com/galambborong/xscor" target="_blank" rel="noopener noreferrer">
-              view code&emsp;<i class="fa fa-github"></i>
-            </a>
-          </button>
-        </div>
-      </article>
-      <!-- card three begin -->
-      <article class="card" id="node-api">
-        <h3 class="card__title">pk-nc-news</h3>
-        <p class="card__desc">
-          Reddit-like back end REST API built following <span class="accent">test-driven development</span> and <span
-            class="accent">MVC</span>
-          principles.
-        </p>
-        <p class="card__desc">Back End Technologies:</p>
-        <ul class="tech">
-          <li>Languages:&emsp;JavaScript</li>
-          <li>Database:&emsp;PostgreSQL</li>
-          <li>Runtime:&emsp;NodeJS, using Express</li>
-          <li>Libraries:&emsp;Node-Postgres, Knex</li>
-          <li>Testing:&emsp;Jest, Supertest</li>
-        </ul>
-        <div class="repo-info--two-stack"><button class="repo-info__btn"><a href="https://pk-nc-news.herokuapp.com/api"
-              target="_blank" rel="noopener noreferrer">
-              view api&ensp;<i class="fa fa-long-arrow-alt-right"></i>&ensp;<i class="fa fa-external-link-square"
-                aria-hidden="true"></i>
-            </a>
-          </button>
-          <button class="repo-info__btn">
-            <a href="https://github.com/galambborong/pk-nc-news" target="_blank" rel="noopener noreferrer">
-              view code&ensp;<i class="fa fa-long-arrow-alt-right"></i>&ensp;<i class="fa fa-github"
-                aria-hidden="true"></i>
-            </a>
-          </button>
-        </div>
-      </article>
-      <!-- card four begin -->
-      <article class="card" id="scraper">
-        <h3 class="card__title">Web scraper</h3>
-        <p class="card__desc">
-          Web scraper written in <span class="accent">Python</span> for
-          monitoring 350+ artist pages.
-        </p>
-        <p class="card__desc">Language:</p>
-        <ul class="tech">
-          <li>Python&emsp;<i class="fa fa-python"></i></li>
-        </ul>
-        <div class="repo-info">
-          <button class="repo-info__btn">
-            <a href="https://github.com/galambborong/scraper" target="_blank" rel="noopener noreferrer">
-              view code&ensp;<i class="fa fa-long-arrow-alt-right"></i>&ensp;<i class="fa fa-github"></i>
-            </a>
-          </button>
-        </div>
-      </article>
-    </section>
-
-    <header class="header">
-      <h2 class="header__sub">Related projects</h2>
-    </header>
-    <section class="card-holder card-holder--extra">
-      <!-- dotfiles card -->
-      <article class="card" id="dotfiles">
-        <h3 class="card__title">dotfiles</h3>
-        <p class="card__desc">
-          My personal dotfiles for my Arch Linux set-up, featuring my ongoing configurations of
-          <span class="accent">XMonad</span> tiling window manager,
-          <span class="accent">Vim</span>, <span class="accent">Emacs</span>, the <span class="accent">Fish</span> shell
-          and various other programs.
-        </p>
-        <div class="repo-info">
-          <button class="repo-info__btn">
-            <a href="https://github.com/galambborong/dotfiles" target="_blank" rel="noopener noreferrer">
-              view code&ensp;<i class="fa fa-long-arrow-alt-right"></i>&ensp;<i class="fa fa-github"></i>
-            </a>
-          </button>
-        </div>
-      </article>
-      <!-- git server card -->
-      <article class="card" id="git-server">
-        <h3 class="card__title">git server</h3>
-        <p class="card__desc">
-          I host my own <span class="accent">Git</span> server on my
-          <span class="accent">Linode</span> VPS. This is a back end project to which I plan to add my own browsable
-          front end in the future.
-        </p>
-      </article>
-      <!-- old-webite card -->
-      <article class="card" id="old-website">
-        <h3 class="card__title">flask website</h3>
-        <p class="card__desc">
-          A previous personal website written in
-          <span class="accent">Python</span> using
-          <span class="accent">Flask</span> and
-          <span class="accent">Jinja</span>.
-        </p>
-        <div class="repo-info">
-          <button class="repo-info__btn">
-            <a href="https://github.com/galambborong/old-website" target="_blank" rel="noopener noreferrer">
-              view code&ensp;<i class="fa fa-long-arrow-alt-right"></i>&ensp;<i class="fa fa-github"></i>
-            </a>
-          </button>
-        </div>
-      </article>
-      <!-- asp website -->
-      <article class="card" id="asp-website">
-        <h3 class="card__title">asp.net website</h3>
-        <p class="card__desc">
-          Sample website created in
-          <span class="accent">ASP.NET</span> with
-          <span class="accent">C#</span>,
-          <span class="accent">Razor</span> and
-          <span class="accent">Bootstrap</span>.
-          Initially intended to be my main portfolio website, but put
-          on hold in favour of the current website.
-        </p>
-        <div class="repo-info">
-          <button class="repo-info__btn">
-            <a href="https://github.com/galambborong/aspnet-website" target="_blank" rel="noopener noreferrer">
-              view code&ensp;<i class="fa fa-long-arrow-alt-right"></i>&ensp;<i class="fa fa-github"></i>
-            </a>
-          </button>
-        </div>
-      </article>
-    </section>
-  </main>
-  <script src="/scripts/script.js"></script>
-</body>
-
+      <header class="header">
+        <h2 class="header__sub">Related projects</h2>
+      </header>
+      <section class="card-holder card-holder--extra">
+        <!-- dotfiles card -->
+        <article class="card" id="dotfiles">
+          <h3 class="card__title">dotfiles</h3>
+          <p class="card__desc">
+            My personal dotfiles for my Arch Linux set-up, featuring my ongoing
+            configurations of
+            <span class="accent">XMonad</span> tiling window manager,
+            <span class="accent">Vim</span>, <span class="accent">Emacs</span>,
+            the <span class="accent">Fish</span> shell and various other
+            programs.
+          </p>
+          <div class="repo-info">
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/dotfiles"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&ensp;<i class="fa fa-long-arrow-alt-right"></i
+                >&ensp;<i class="fa fa-github"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+        <!-- git server card -->
+        <article class="card" id="git-server">
+          <h3 class="card__title">git server</h3>
+          <p class="card__desc">
+            I host my own <span class="accent">Git</span> server on my
+            <span class="accent">Linode</span> VPS. This is a back end project
+            to which I plan to add my own browsable front end in the future.
+          </p>
+        </article>
+        <!-- old-webite card -->
+        <article class="card" id="old-website">
+          <h3 class="card__title">flask website</h3>
+          <p class="card__desc">
+            A previous personal website written in
+            <span class="accent">Python</span> using
+            <span class="accent">Flask</span> and
+            <span class="accent">Jinja</span>.
+          </p>
+          <div class="repo-info">
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/old-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&ensp;<i class="fa fa-long-arrow-alt-right"></i
+                >&ensp;<i class="fa fa-github"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+        <!-- asp website -->
+        <article class="card" id="asp-website">
+          <h3 class="card__title">asp.net website</h3>
+          <p class="card__desc">
+            Sample website created in
+            <span class="accent">ASP.NET</span> with
+            <span class="accent">C#</span>,
+            <span class="accent">Razor</span> and
+            <span class="accent">Bootstrap</span>. Initially intended to be my
+            main portfolio website, but put on hold in favour of the current
+            website.
+          </p>
+          <div class="repo-info">
+            <button class="repo-info__btn">
+              <a
+                href="https://github.com/galambborong/aspnet-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                view code&ensp;<i class="fa fa-long-arrow-alt-right"></i
+                >&ensp;<i class="fa fa-github"></i>
+              </a>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <script src="/scripts/script.js"></script>
+  </body>
 </html>
