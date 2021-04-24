@@ -196,7 +196,8 @@ img {
 }
 
 .section__list {
-  padding-inline-start: 2rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
   line-height: 1.2;
 }
 
@@ -347,7 +348,8 @@ img {
 
 /* Card icons */
 .tech {
-  padding-inline-start: 2.5rem;
+  -webkit-padding-start: 2.5rem;
+          padding-inline-start: 2.5rem;
   line-height: 1.2;
 }
 
@@ -371,6 +373,14 @@ input[type=text] {
   height: 2rem;
   font-size: 20px;
   text-indent: 6px;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #595e72;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #595e72;
 }
 
 input::placeholder,
@@ -399,6 +409,8 @@ textarea {
 }
 
 .code {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   background-color: #3b415c;
   border: 1px solid #eeffff;
@@ -418,7 +430,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto);
-    grid-template-areas: "card1 card1 card4" "card2 card3 card3";
+    grid-template-areas: "card3 card3 card4" "card2 card1 card1";
   }
 
   #pk-website {
@@ -429,7 +441,7 @@ textarea {
     grid-area: card2;
   }
 
-  #node-api {
+  #getit {
     grid-area: card3;
   }
 
@@ -495,6 +507,4 @@ textarea {
   #pk {
     display: none;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

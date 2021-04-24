@@ -132,7 +132,6 @@ img {
   margin: 0 auto;
 }
 
-
 /* Miscellaneous general stylings */
 
 .accent {
@@ -282,8 +281,6 @@ img {
   margin: 1rem;
 }
 
-
-
 /* Hero page */
 
 .hero {
@@ -405,7 +402,6 @@ img {
 
 /* Card icons */
 
-
 .tech {
   padding-inline-start: 2.5rem;
   // list-style-type: none;
@@ -491,8 +487,8 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto);
     grid-template-areas:
-      'card1 card1 card4'
-      'card2 card3 card3';
+      'card3 card3 card4'
+      'card2 card1 card1';
   }
   #pk-website {
     grid-area: card1;
@@ -502,7 +498,7 @@ textarea {
     grid-area: card2;
   }
 
-  #node-api {
+  #getit {
     grid-area: card3;
   }
 
