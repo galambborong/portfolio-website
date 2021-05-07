@@ -430,7 +430,7 @@ textarea {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto);
-    grid-template-areas: "card3 card3 card4" "card2 card1 card1";
+    grid-template-areas: "card4 card4 card1" "card3 card3 card2";
   }
 
   #pk-website {
@@ -445,7 +445,7 @@ textarea {
     grid-area: card3;
   }
 
-  #scraper {
+  #bingr {
     grid-area: card4;
   }
 
