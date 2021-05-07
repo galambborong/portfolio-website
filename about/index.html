@@ -1,101 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Peter Keenan / galambborong" />
+    <meta
+      name="description"
+      content="Peter Keenan. Training full stack developer and musician"
+    />
+    <title>Peter Keenan &#8226; About me</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Peter Keenan / galambborong">
-  <meta name="description" content="Peter Keenan. Training full stack developer and musician">
-  <title>Peter Keenan &#8226; About me</title>
-  <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-    integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous" />
-</head>
-
-<body>
-  <nav class="menu">
-    <button class="menu__btn btn--left">
-      <a href="/"><span class="first">p</span><span class="second">k</span></a>
-    </button>
-    <button class="menu__btn btn--right hamburger" id="hamburger" title="Navigate this site">
-      &#9776;
-    </button>
-    <ul class="menu__list" id="nav-items">
-      <li class="menu__item"><a href="/about">about</a></li>
-      <li class="menu__item"><a href="/projects">projects</a></li>
-      <li class="menu__item"><a href="/contact">contact</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <header class="header">
-      <h1 class="header__title">About me</h1>
-      <img id="pk" src="/images/peter-keenan.jpeg" alt="Photograph taken from the side of Peter Keenan in a woods" />
-      <h2 class="header__sub">Musician-turned-coder</h2>
-    </header>
-    <section class="section" id="about-me">
-      <p class="section__blurb">
-        I trained as a musician and musicologist and am now changing career path and pursuing my interest in coding. In
-        January 2021, I began a full stack developer course with
-        <a href="https://northcoders.com/" class="external" target="_blank" rel="noopener noreferrer">Northcoders.</a>
-      </p>
-      <p class="section__blurb">
-        I'm a fairly longstanding Linux user (Arch Linux, by the way) and suppose that was my 'gateway' to coding. I'm a
-        big supporter of free and open source software and believe that software developers can play a major role in
-        improving the world we live in.
-      </p>
-      <p class="section__blurb">I like making things, bringing elements together into something practical
-        and meaningful. I also
-        like making things happen; I founded a professional opera company and have a lot of project management
-        experience.</p>
-      <p class="section__blurb">
-        Although I am very early on in my coding journey, I feel most drawn towards full stack web development and
-        DevOps, and am hoping to find a role where I can continue to develop and challenge myself.
-      </p>
-      <p class="section__blurb">
-        I fuel my coding with plenty of freshly brewed coffee from my Bialetti Moka Express (there is no better way to
-        make coffee!), and &ndash; when possible &ndash; like to do long distance cycling.
-      </p>
-      <p class="section__blurb">
-        Since getting into coding, I've explored the languages and technologies below. Where applicable, I've included
-        my <a href="https://app.pluralsight.com/profile/galambborong" class="external" target="_blank"
-          rel="noopener noreferrer">Pluralsight Skill IQs</a>:
-      </p>
-      <ul class="section__list">
-        <li>JavaScript&ensp;<small>(162, proficient)</small></li>
-        <li>Python&ensp;<small>(179, proficient)</small></li>
-        <li>C#&ensp;<small>(173, proficient)</small></li>
-        <!-- <li>Haskell</li> -->
+  <body>
+    <nav class="menu">
+      <button class="menu__btn btn--left">
+        <a href="/"
+          ><span class="first">p</span><span class="second">k</span></a
+        >
+      </button>
+      <button
+        class="menu__btn btn--right hamburger"
+        id="hamburger"
+        title="Navigate this site"
+      >
+        &#9776;
+      </button>
+      <ul class="menu__list" id="nav-items">
+        <li class="menu__item"><a href="/about">about</a></li>
+        <li class="menu__item"><a href="/projects">projects</a></li>
+        <li class="menu__item"><a href="/contact">contact</a></li>
       </ul>
-      <p class="section__blurb">
-        Although I'm currently in the midst of a 14-week coding bootcamp, I am learning Rust in my spare time and plan
-        to dive more deeply into this after graduating.
-      </p>
-      <p class="section__blurb">I've also learned the following technologies to some degree:</p>
-      <ul class="section__list">
-        <li>Git&ensp;<small>(245)</small></li>
-        <li>GitHub&ensp;<small>(194, proficient)</small></li>
-        <li>ASP.NET&ensp;<small>(131, proficient)</small></li>
-        <li>Docker&ensp;<small>(124, proficient)</small></li>
-        <li>SQL (postgres)</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Sass</li>
-        <!-- <li>React</li> -->
-        <li>Flask</li>
-        <li>Bootstrap</li>
-        <li>Nginx</li>
-      </ul>
-    </section>
-  </main>
-  <aside id="music-info">
-    <p>
-      If you're interested, here's a little
-      <a href="./music">overview</a>
-      of some of my musical activities.
-    </p>
-  </aside>
-  <script src="/scripts/script.js"></script>
-</body>
+    </nav>
 
+    <main>
+      <header class="header">
+        <h1 class="header__title">About me</h1>
+        <img
+          id="pk"
+          src="/images/peter-keenan.jpeg"
+          alt="Photograph taken from the side of Peter Keenan in a woods"
+        />
+        <h2 class="header__sub">Musician-turned-coder</h2>
+      </header>
+      <section class="section" id="about-me">
+        <p class="section__blurb">
+          I trained as a musician and musicologist and am now changing career
+          path and pursuing my interest in coding. In January 2021, I began a
+          full stack developer course with
+          <a
+            href="https://northcoders.com/"
+            class="external"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Northcoders.</a
+          >
+        </p>
+        <p class="section__blurb">
+          I'm a fairly longstanding Linux user (Arch Linux, by the way) and
+          suppose that was my 'gateway' to coding. I'm a big supporter of free
+          and open source software and believe that software developers can play
+          a major role in improving the world we live in.
+        </p>
+        <p class="section__blurb">
+          I like making things, bringing elements together into something
+          practical and meaningful. I also like making things happen; I founded
+          a professional opera company and have a lot of project management
+          experience.
+        </p>
+        <p class="section__blurb">
+          Although I am very early on in my coding journey, I feel most drawn
+          towards full stack web development and DevOps, and am hoping to find a
+          role where I can continue to develop and challenge myself.
+        </p>
+        <p class="section__blurb">
+          I fuel my coding with plenty of freshly brewed coffee from my Bialetti
+          Moka Express (there is no better way to make coffee!), and &ndash;
+          when possible &ndash; like to do long distance cycling.
+        </p>
+        <p class="section__blurb">
+          Since getting into coding, I've explored the languages and
+          technologies below. Where applicable, I've included my
+          <a
+            href="https://app.pluralsight.com/profile/galambborong"
+            class="external"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Pluralsight Skill IQs</a
+          >:
+        </p>
+        <ul class="section__list">
+          <li>JavaScript&ensp;<small>(162, proficient)</small></li>
+          <li>Python&ensp;<small>(179, proficient)</small></li>
+          <li>C#&ensp;<small>(173, proficient)</small></li>
+          <li>Rust&ensp;<small>(newly learning)</small></li>
+        </ul>
+        <p class="section__blurb">
+          I've also learned the following technologies to some degree:
+        </p>
+        <ul class="section__list">
+          <li>Git&ensp;<small>(245)</small></li>
+          <li>GitHub&ensp;<small>(194, proficient)</small></li>
+          <li>ASP.NET&ensp;<small>(131, proficient)</small></li>
+          <li>Docker&ensp;<small>(124, proficient)</small></li>
+          <li>SQL (postgres)</li>
+          <li>NoSQL (firebase)</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>Sass</li>
+          <li>CSS3</li>
+          <li>HTML5</li>
+          <li>Bootstrap</li>
+          <li>Nginx</li>
+        </ul>
+      </section>
+    </main>
+    <aside id="music-info">
+      <p>
+        If you're interested, here's a little
+        <a href="./music">overview</a>
+        of some of my musical activities.
+      </p>
+    </aside>
+    <script src="/scripts/script.js"></script>
+  </body>
 </html>
