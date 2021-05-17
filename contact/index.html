@@ -55,6 +55,7 @@
           action="https://formspree.io/f/xknpkpdy"
           method="POST"
           class="contact"
+          id="contact-form"
         >
           <label for="name">
             <input
@@ -62,15 +63,17 @@
               id="name"
               name="name"
               placeholder="Enter your name here"
+              class="contact-input invalid"
             />
           </label>
           <p id="name-invalid"></p>
           <label for="_replyto">
             <input
               type="text"
-              id="_replyto"
+              id="email"
               name="_replyto"
               placeholder="And your email address"
+              class="contact-input invalid"
             />
           </label>
           <p id="email-invalid"></p>
@@ -80,9 +83,11 @@
             rows="3"
             placeholder="Type your message here"
             id="message"
+            class="contact-input invalid"
           ></textarea>
           <p id="message-invalid"></p>
           <button type="submit">Submit</button>
+          <p id="invalid-form"></p>
         </form>
       </section>
       <section class="section" id="email">
