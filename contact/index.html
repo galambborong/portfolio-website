@@ -1,104 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Peter Keenan / galambborong" />
+    <meta
+      name="description"
+      content="Peter Keenan. Training full stack developer and musician"
+    />
+    <title>Peter Keenan &#8226; Contact</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Peter Keenan / galambborong">
-  <meta name="description" content="Peter Keenan. Training full stack developer and musician">
-  <title>Peter Keenan &#8226; Contact</title>
-  <link rel="stylesheet" href="/styles/main.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-    integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous" />
-</head>
+  <body>
+    <nav class="menu">
+      <button class="menu__btn btn--left">
+        <a href="/"
+          ><span class="first">p</span><span class="second">k</span></a
+        >
+      </button>
+      <button
+        class="menu__btn btn--right hamburger"
+        id="hamburger"
+        title="Navigate this site"
+      >
+        &#9776;
+      </button>
+      <ul class="menu__list" id="nav-items">
+        <li class="menu__item"><a href="/about">about</a></li>
+        <li class="menu__item"><a href="/projects">projects</a></li>
+        <li class="menu__item"><a href="/contact">contact</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav class="menu">
-    <button class="menu__btn btn--left">
-      <a href="/"><span class="first">p</span><span class="second">k</span></a>
-    </button>
-    <button class="menu__btn btn--right hamburger" id="hamburger" title="Navigate this site">
-      &#9776;
-    </button>
-    <ul class="menu__list" id="nav-items">
-      <li class="menu__item"><a href="/about">about</a></li>
-      <li class="menu__item"><a href="/projects">projects</a></li>
-      <li class="menu__item"><a href="/contact">contact</a></li>
-    </ul>
-  </nav>
+    <main>
+      <header class="header">
+        <h1 class="header__title">Contact</h1>
+        <h2 class="header__sub">How to get in touch</h2>
+      </header>
+      <p>If you want to get in touch, I'd be delighted to hear from you!</p>
+      <section class="section" id="form">
+        <h3 class="section__title">Contact form</h3>
+        <p class="section__blurb">
+          Fill out the contact form details below and I will respond as soon as
+          possible.
+        </p>
+        <form
+          action="https://formspree.io/f/xknpkpdy"
+          method="POST"
+          class="contact"
+        >
+          <label for="name">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name here"
+            />
+          </label>
+          <p id="name-invalid"></p>
+          <label for="_replyto">
+            <input
+              type="text"
+              id="_replyto"
+              name="_replyto"
+              placeholder="And your email address"
+            />
+          </label>
+          <p id="email-invalid"></p>
 
-  <main>
-    <header class="header">
-      <h1 class="header__title">Contact</h1>
-      <h2 class="header__sub">How to get in touch</h2>
-    </header>
-    <p>If you want to get in touch, I'd be delighted to hear from you!</p>
-    <section class="section" id="form">
-      <h3 class="section__title">Contact form</h3>
-      <p class="section__blurb">
-        Fill out the contact form details below and I will respond as soon as
-        possible.
-      </p>
-      <form action="https://formspree.io/f/xknpkpdy" method="POST" class="contact">
-        <input type="text" name="name" placeholder="Enter your name here" />
-        <br />
-        <input type="text" name="_replyto" placeholder="And your email address" />
-        <br />
-        <textarea name="message" rows="3" placeholder="Type your message here"></textarea>
-        <br />
-        <input type="submit" />
-      </form>
-    </section>
-    <section class="section" id="email">
-      <h3 class="section__title">Email</h3>
-      <p class="section__blurb">
-        If you'd prefer not to use the contact form, you should be able to
-        figure out my email address from the information below (provided
-        you're not a machine).<br /><b>Hint:</b> This is JavaScript syntax.
-      </p>
-      <div class="code">
-        <code class="code__block">
+          <textarea
+            name="message"
+            rows="3"
+            placeholder="Type your message here"
+            id="message"
+          ></textarea>
+          <p id="message-invalid"></p>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section class="section" id="email">
+        <h3 class="section__title">Email</h3>
+        <p class="section__blurb">
+          If you'd prefer not to use the contact form, you should be able to
+          figure out my email address from the information below (provided
+          you're not a machine).<br /><b>Hint:</b> This is JavaScript syntax.
+        </p>
+        <div class="code">
+          <code class="code__block">
             <span class="first">const</span> mySurname = "keenan";<br />
             <span class="first">const</span> myEmailProvider = "posteo.net";<br /><br />
             <span class="first">const</span> myEmail =
             `${mySurname}@${myEmailProvider}`;
           </code>
-      </div>
-      <p>
-        Should you prefer to use encrypted email,
-        <a href="/pk_public.pgp">my public GPG key is available here.</a>
-      </p>
-    </section>
-    <section class="section" id="social-media">
-      <h3 class="section__title">Across the web</h3>
-      <p class="section__blurb">You can also find me on the following platforms:</p>
-      <ul class="section__list">
-        <li>
-          <a href="https://linuxrocks.online/@galambborong" target="_blank" rel="noopener noreferrer"
-            class="external">Mastodon</a>
-        </li>
-        <li>
-          <a href="https://github.com/galambborong" target="_blank" rel="noopener noreferrer"
-            class="external">GitHub</a>
-        </li>
-        <li>
-          <a href="https://gitlab.com/galambborong" target="_blank" rel="noopener noreferrer"
-            class="external">GitLab</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/p-keenan" target="_blank" rel="noopener noreferrer"
-            class="external">LinkedIn</a>
-        </li>
-        <li>
-          Any
-          <a href="https://matrix.org" target="_blank" rel="noopener noreferrer" class="external">Matrix</a>
-          app&emsp;
-          <small>(@galambborong)</small>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <script src="/scripts/script.js"></script>
-</body>
-
+        </div>
+        <p>
+          Should you prefer to use encrypted email,
+          <a href="/pk_public.pgp">my public GPG key is available here.</a>
+        </p>
+      </section>
+      <section class="section" id="social-media">
+        <h3 class="section__title">Across the web</h3>
+        <p class="section__blurb">
+          You can also find me on the following platforms:
+        </p>
+        <ul class="section__list">
+          <li>
+            <a
+              href="https://linuxrocks.online/@galambborong"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="external"
+              >Mastodon</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/galambborong"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="external"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://gitlab.com/galambborong"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="external"
+              >GitLab</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/p-keenan"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="external"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            Any
+            <a
+              href="https://matrix.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="external"
+              >Matrix</a
+            >
+            app&emsp;
+            <small>(@galambborong)</small>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="/scripts/script.js"></script>
+  </body>
 </html>
