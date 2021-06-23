@@ -4,7 +4,7 @@ import LandingPage from './components/LandingPage';
 import AboutMe from './components/AnotherPage';
 import { Router } from '@reach/router';
 
-function App(): JSX.Element {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       <header className="App-header">Work in progress</header>
@@ -15,6 +15,6 @@ function App(): JSX.Element {
       </Router>
     </div>
   );
-}
+};
 
 export default App;
