@@ -1,20 +1,24 @@
 import React from 'react';
+import { Router } from '@reach/router';
 import Nav from './components/Nav';
 import LandingPage from './components/LandingPage';
-import AboutMe from './components/AnotherPage';
-import { Router } from '@reach/router';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
-const App = (): JSX.Element => {
+function App(): JSX.Element {
   return (
     <div className="App">
       <header className="App-header">Work in progress</header>
       <Nav />
       <Router>
         <LandingPage path="/" />
-        <AboutMe path="/hello" />
+        <About path="/about" />
+        <Projects path="/projects" />
+        <Contact path="/contact" />
       </Router>
     </div>
   );
-};
+}
 
 export default App;
