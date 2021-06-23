@@ -1,4 +1,7 @@
-function App() {
+import React from 'react';
+import Nav from './components/Nav';
+
+function App(): JSX.Element {
   return (
     <div className="App">
       <header className="App-header">
@@ -14,6 +17,7 @@ function App() {
           Learn React with TypeScript
         </a>
       </header>
+      <Nav />
     </div>
   );
 }
