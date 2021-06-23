@@ -1,23 +1,20 @@
 import React from 'react';
 import Nav from './components/Nav';
+import LandingPage from './components/LandingPage';
+import AnotherPage from './components/AnotherPage';
+import { Router, RouteComponentProps, Link } from '@reach/router';
+
+// let LandingPage = (props: RouteComponentProps) => LandingPage;
 
 function App(): JSX.Element {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React with TypeScript
-        </a>
-      </header>
+      <header className="App-header">Work in progress</header>
       <Nav />
+      <Router>
+        <LandingPage path="/" />
+        <AnotherPage path="/hello" />
+      </Router>
     </div>
   );
 }
