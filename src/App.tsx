@@ -1,10 +1,8 @@
 import React from 'react';
 import Nav from './components/Nav';
 import LandingPage from './components/LandingPage';
-import AnotherPage from './components/AnotherPage';
-import { Router, RouteComponentProps, Link } from '@reach/router';
-
-// let LandingPage = (props: RouteComponentProps) => LandingPage;
+import AboutMe from './components/AnotherPage';
+import { Router } from '@reach/router';
 
 function App(): JSX.Element {
   return (
@@ -13,7 +11,7 @@ function App(): JSX.Element {
       <Nav />
       <Router>
         <LandingPage path="/" />
-        <AnotherPage path="/hello" />
+        <AboutMe path="/hello" />
       </Router>
     </div>
   );
