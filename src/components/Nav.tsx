@@ -16,8 +16,7 @@ const Nav = (props: RouteComponentProps): JSX.Element => {
         id="hamburger"
         title="Navigate this site"
       >
-        &#9776;
-        {/* <i className="fa fa-bars" aria-hidden="true" /> */}
+        <i className="fa fa-bars" aria-hidden="true" />
       </button>
       <ul className="menu__list">
         <li className="menu_item">

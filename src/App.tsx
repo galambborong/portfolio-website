@@ -9,7 +9,6 @@ import Contact from './components/Contact';
 function App(): JSX.Element {
   return (
     <div className="App">
-      {/* <header className="App-header">Work in progress</header> */}
       <Nav />
       <Router>
         <LandingPage path="/" />
