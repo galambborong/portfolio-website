@@ -1,0 +1,522 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "karmillaBold";
+  src: url("./fonts/karmilla/karmilla-bold-015-webfont.eot");
+  src: url("./fonts/karmilla/karmilla-bold-015-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/karmilla/karmilla-bold-015-webfont.woff2") format("woff2"), url("./fonts/karmilla/karmilla-bold-015-webfont.woff") format("woff"), url("./fonts/karmilla/karmilla-bold-015-webfont.ttf") format("truetype"), url("./fonts/karmilla/karmilla-bold-015-webfont.svg#karmillabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "karmillaRegular";
+  src: url("./fonts/karmilla/karmilla-regular-015-webfont.eot");
+  src: url("./fonts/karmilla/karmilla-regular-015-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/karmilla/karmilla-regular-015-webfont.woff2") format("woff2"), url("./fonts/karmilla/karmilla-regular-015-webfont.woff") format("woff"), url("./fonts/karmilla/karmilla-regular-015-webfont.ttf") format("truetype"), url("./fonts/karmilla/karmilla-regular-015-webfont.svg#karmillaregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mononokiRegular";
+  src: url("./fonts/mononoki/mononoki-Regular.eot");
+  src: url("./fonts/mononoki/mononoki-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/mononoki/mononoki-Regular.woff2") format("woff2"), url("./fonts/mononoki/mononoki-Regular.woff") format("woff"), url("./fonts/mononoki/mononoki-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mononokiBold";
+  src: url("./fonts/mononoki/mononoki-Bold.eot");
+  src: url("./fonts/mononoki/mononoki-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/mononoki/mononoki-Bold.woff2") format("woff2"), url("./fonts/mononoki/mononoki-Bold.woff") format("woff"), url("./fonts/mononoki/mononoki-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mononokiItalic";
+  src: url("./fonts/mononoki/mononoki-Italic.eot");
+  src: url("./fonts/mononoki/mononoki-Italic.eot?#iefix") format("embedded-opentype"), url("./fonts/mononoki/mononoki-Italic.woff2") format("woff2"), url("./fonts/mononoki/mononoki-Italic.woff") format("woff"), url("./fonts/mononoki/mononoki-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #292d3e;
+  max-width: 900px;
+  margin: auto;
+  color: #eeffff;
+  font-family: karmillaRegular;
+  font-size: 20px;
+  line-height: 1.618;
+  padding: 1.618em;
+}
+
+/* Anchor tag stylings */
+a {
+  text-decoration: none;
+  color: #ffcb6b;
+}
+
+a[href]:hover {
+  background-color: #212532;
+  color: #f78c5b;
+  border: dashed 1px #919494;
+  transition-property: all;
+  transition-duration: 250ms;
+}
+
+.external::after {
+  font-family: "ForkAwesome";
+  content: "";
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+  font-size: 0.7rem;
+  vertical-align: 0.1rem;
+}
+
+p {
+  margin: 20px 0;
+}
+
+img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Miscellaneous general stylings */
+.accent {
+  color: #c3e872;
+  font-weight: 500;
+}
+
+.first {
+  color: #ffcb6b;
+}
+
+.second {
+  color: #f78c5b;
+}
+
+/* Navigation here */
+.menu {
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  color: #ffcb6b;
+}
+
+.menu--hero {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu__btn {
+  background-color: #292d3e;
+  font-family: mononokiBold, monospace;
+  font-size: 2rem;
+  border-style: none;
+}
+
+.btn--left {
+  justify-self: start;
+}
+
+.btn--right {
+  justify-self: end;
+}
+
+/* Hamburger and std menu toggle */
+.hamburger {
+  display: none;
+  background-color: #292d3e;
+  font-size: 2rem;
+  color: #eeffff;
+  cursor: pointer;
+}
+
+.menu__list {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: lowercase;
+  float: right;
+  font-family: mononokiBold, monospace;
+  justify-self: end;
+}
+
+.menu__item {
+  display: inline;
+  list-style-type: none;
+  padding: 0.618rem;
+}
+
+.menu__item a {
+  color: #ffcb6b;
+}
+
+/* Header */
+.header {
+  display: block;
+  height: 40%;
+  font-family: karmillaBold;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.header__sub {
+  font-size: 2rem;
+  margin: 1.625rem 0;
+  text-align: center;
+}
+
+.header__sub--hero {
+  font-family: mononokiItalic, monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.header__strapline {
+  background-color: #3b415c;
+  border: 1px solid #eeffff;
+  padding: 1rem;
+  font-family: mononokiBold, monospace;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+/* General sections */
+.section__title {
+  font-family: karmillaBold;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  color: #f78c5b;
+}
+
+.section__list {
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+  line-height: 1.2;
+}
+
+/* Project cards */
+.card-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  border: 1px solid #eeffff;
+  margin: 10px;
+  background-color: #3b415c;
+  align-self: start;
+}
+
+.card__link {
+  color: #eeffff;
+}
+
+.card__title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: mononokiBold, monospace;
+  color: #7fb347;
+  margin: 1rem;
+  text-transform: lowercase;
+}
+
+.card__desc {
+  margin: 1rem;
+}
+
+/* Hero page */
+.hero {
+  display: grid;
+  height: calc(100vh - 3.236em);
+  place-items: center;
+}
+
+.header--hero {
+  font-family: mononokiBold, monospace;
+  text-align: center;
+}
+
+.header__title--hero {
+  font-size: 4.5rem;
+}
+
+.menu__list--hero {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+@media screen and (max-width: 550px) {
+  .menu__list--hero {
+    grid-template-columns: 1fr;
+  }
+
+  .menu__item--hero {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+
+  .header__title--hero {
+    font-size: 2.5rem;
+  }
+
+  .header__sub--hero {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-height: 869px) {
+  .header__sub--hero {
+    font-size: 1.75rem;
+  }
+
+  .header__strapline {
+    display: none;
+  }
+}
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 3rem;
+}
+
+.social-media__item {
+  list-style-type: none;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.social-media__item a {
+  color: #eeffff;
+}
+
+/* Repo link styling */
+.repo-info {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 1rem;
+  place-items: center;
+}
+
+.repo-info--two-stack {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1rem;
+  place-items: center;
+}
+
+.repo-info__btn {
+  background-color: #292d3e;
+  border: 1px solid #eeffff;
+  color: #eeffff;
+  font-family: mononokiRegular, monospace;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.repo-info__btn a {
+  color: #eeffff;
+}
+
+.repo-info__cta {
+  font-size: 1rem;
+  justify-self: end;
+}
+
+.repo-info__link {
+  font-size: 1.3rem;
+  justify-self: start;
+  color: #eeffff;
+}
+
+.repo-info__link::after {
+  font-family: none;
+  content: none;
+}
+
+.repo-info__link:hover {
+  font-family: none;
+}
+
+/* Card icons */
+.tech {
+  -webkit-padding-start: 2.5rem;
+          padding-inline-start: 2.5rem;
+  line-height: 1.2;
+}
+
+.tech__icons {
+  justify-self: center;
+}
+
+/* Contact form */
+form {
+  display: grid;
+  max-width: 100vw;
+  margin: auto;
+}
+
+input[type=text] {
+  font-family: "karmillaRegular";
+  background-color: #eeffff;
+  color: #292d3e;
+  border-style: none;
+  border-radius: 4px;
+  height: 2rem;
+  width: 100%;
+  font-size: 20px;
+  text-indent: 6px;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #595e72;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #595e72;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #595e72;
+}
+
+button[type=submit] {
+  background-color: #c792ea;
+  color: #292d3e;
+  border: none;
+  font-family: "karmillaBold";
+  font-size: 1.2rem;
+  border-radius: 4px;
+  height: 2rem;
+}
+
+textarea {
+  font-family: "karmillaRegular";
+  border-style: none;
+  border-radius: 4px;
+  background-color: #eeffff;
+  color: #292d3e;
+  font-size: 20px;
+  text-indent: 6px;
+}
+
+.error-message {
+  color: #f78c5b;
+  color: #292d3e;
+  color: #212532;
+  text-align: center;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: #f78c5b;
+}
+
+.code {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #3b415c;
+  border: 1px solid #eeffff;
+  padding: 1rem;
+  line-height: 1;
+}
+
+.code__block {
+  font-family: mononokiRegular, monospace;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* Main media queries */
+@media screen and (min-width: 900px) {
+  .card-holder--main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto);
+    grid-template-areas: "card4 card4 card1" "card3 card3 card2";
+  }
+
+  #pk-website {
+    grid-area: card1;
+  }
+
+  #xscor {
+    grid-area: card2;
+  }
+
+  #getit {
+    grid-area: card3;
+  }
+
+  #bingr {
+    grid-area: card4;
+  }
+
+  .card-holder--extra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto);
+    grid-template-areas: "card2 card1 card1" "card4 card4 card3";
+  }
+
+  #dotfiles {
+    grid-area: card1;
+  }
+
+  #old-website {
+    grid-area: card2;
+  }
+
+  #git-server {
+    grid-area: card3;
+  }
+
+  #asp-website {
+    grid-area: card4;
+  }
+}
+@media screen and (max-width: 900px) {
+  .card-holder {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 730px) {
+  .card-holder {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 640px) {
+  .menu__list {
+    display: none;
+  }
+
+  .menu__list--hero {
+    display: grid;
+  }
+
+  .show-nav {
+    display: grid;
+    padding: 0.8rem 0;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3b415c;
+    width: calc(100vw - 3.236em);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #pk {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

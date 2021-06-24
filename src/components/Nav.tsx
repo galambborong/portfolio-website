@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from '@reach/router';
+import { Link, RouteComponentProps } from '@reach/router';
 
-const Nav = (): JSX.Element => {
+const Nav = (props: RouteComponentProps): JSX.Element => {
+  console.log(props, '<<<');
   return (
-    <nav className="menu">
+    <nav className="menu" data-testid="nav__main">
       <button className="menu__btn btn--left">
-        <Link to="/">
+        <Link to="/" data-testid="nav__home">
           <span className="first">p</span>
           <span className="second">k</span>
         </Link>
@@ -16,16 +17,23 @@ const Nav = (): JSX.Element => {
         title="Navigate this site"
       >
         &#9776;
+        {/* <i className="fa fa-bars" aria-hidden="true" /> */}
       </button>
       <ul className="menu__list">
         <li className="menu_item">
-          <Link to="/about">about</Link>
+          <Link to="/about" data-testid="nav__about">
+            about
+          </Link>
         </li>
         <li className="menu_item">
-          <Link to="/projects">projects</Link>
+          <Link to="/projects" data-testid="nav__projects">
+            projects
+          </Link>
         </li>
         <li className="menu_item">
-          <Link to="/contact">contact</Link>
+          <Link to="/contact" data-testid="nav__contact">
+            contact
+          </Link>
         </li>
       </ul>
     </nav>
