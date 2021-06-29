@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link, RouteComponentProps } from '@reach/router';
+import { Link } from '@reach/router';
 
-const Nav = (props: RouteComponentProps): JSX.Element => {
-  console.log(props, '<<<');
+const Nav: React.FC = () => {
   return (
     <nav className="menu" data-testid="nav__main">
       <button className="menu__btn btn--left">
