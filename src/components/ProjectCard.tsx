@@ -1,25 +1,23 @@
-import { FC } from 'react';
 import React from 'react';
-import { object, func } from 'prop-types';
 
-// www.idkblogs.com/react/56/Error-Data-is-missing-in-props-validation--eslint-react-prop-types--React
 
-https: type repoInfo = {
-  githubUrl: string;
-};
-
-type ProjectCardType = {
+type ProjectCardTypes = {
   title: string;
   description: string;
   technologies: string[];
   repoInfo: repoInfo;
 };
 
-interface ProjectCardProps {
-  project: ProjectCardType;
+type repoInfo = {
+    githubUrl: string;
+};
+
+interface Props {
+  project: ProjectCardTypes;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
+export const ProjectCard: React.FC<Props> = ( props: Props) => {
+  const { project} = props;
   const { title, description, technologies, repoInfo } = project;
   const { githubUrl } = repoInfo;
 
@@ -29,7 +27,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
         {title}
       </h3>
       <p className="card__desc">{description}</p>
-      <p className="card__desc">Front End Tech</p>
+      <p className="card__desc">Technologies</p>
       <ul className="tech">
         {technologies.map((technology, idx) => {
           return <li key={`${idx}${technology}`}>{technology}</li>;
@@ -47,4 +45,4 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   );
 };
 
-export default ProjectCard;
+// export default ProjectCard;
