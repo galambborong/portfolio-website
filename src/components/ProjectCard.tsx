@@ -1,5 +1,8 @@
 import React from 'react';
 
+interface IProps {
+  project: ProjectCardTypes;
+}
 
 type ProjectCardTypes = {
   title: string;
@@ -9,15 +12,10 @@ type ProjectCardTypes = {
 };
 
 type repoInfo = {
-    githubUrl: string;
+  githubUrl: string;
 };
 
-interface Props {
-  project: ProjectCardTypes;
-}
-
-export const ProjectCard: React.FC<Props> = ( props: Props) => {
-  const { project} = props;
+export const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
   const { title, description, technologies, repoInfo } = project;
   const { githubUrl } = repoInfo;
 
