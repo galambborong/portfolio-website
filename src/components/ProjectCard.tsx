@@ -15,7 +15,7 @@ type repoInfo = {
   githubUrl: string;
 };
 
-export const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
+const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
   const { title, description, technologies, repoInfo } = project;
   const { githubUrl } = repoInfo;
 
@@ -43,4 +43,4 @@ export const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
   );
 };
 
-// export default ProjectCard;
+export default ProjectCard;
