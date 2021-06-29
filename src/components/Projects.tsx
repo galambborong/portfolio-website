@@ -1,46 +1,37 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 import { useState } from 'react';
-import ProjectCard from './ProjectCard';
+import { ProjectCard } from './ProjectCard';
 
 const Projects = (props: RouteComponentProps): JSX.Element => {
   const [projects, setProjects] = useState([
     {
-      title: 'Portfolio website',
+      title: 'Project1',
       description:
-        'This responsive and accessible website, designed following a mobile-first approach.',
+        'Blah blah blah blah',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
       repoInfo: {
-        githubUrl: 'https://github.com/galambborong/portfolio-website'
+        githubUrl: 'https://github.com/galambborong/project1'
       }
     },
     {
-      title: 'Portfolio website',
+      title: 'Project2',
       description:
-        'This responsive and accessible website, designed following a mobile-first approach.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
+        'Meh meh meh meh',
+      technologies: ['Blood', 'Sweat', 'Tears'],
       repoInfo: {
-        githubUrl: 'https://github.com/galambborong/portfolio-website'
+        githubUrl: 'https://github.com/galambborong/project2'
       }
     },
     {
-      title: 'Portfolio website',
+      title: 'Project3',
       description:
-        'This responsive and accessible website, designed following a mobile-first approach.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
+        'Poo poo poo poo poo',
+      technologies: ['Bristol stool chart', 'RateMyPoo.com'],
       repoInfo: {
-        githubUrl: 'https://github.com/galambborong/portfolio-website'
+        githubUrl: 'https://github.com/galambborong/portfolio3'
       }
     },
-    {
-      title: 'Portfolio website',
-      description:
-        'This responsive and accessible website, designed following a mobile-first approach.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
-      repoInfo: {
-        githubUrl: 'https://github.com/galambborong/portfolio-website'
-      }
-    }
   ]);
   return (
     <main>
