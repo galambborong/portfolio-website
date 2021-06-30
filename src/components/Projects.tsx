@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 import { useState } from 'react';
-import { ProjectCard } from './ProjectCard';
+import ProjectCard from './ProjectCard';
 
 const Projects = (props: RouteComponentProps): JSX.Element => {
   const [projects, setProjects] = useState([
