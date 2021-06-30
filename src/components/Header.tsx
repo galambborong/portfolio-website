@@ -7,10 +7,10 @@ interface IProps {
 interface IHeading {
   mainHeader: string;
   subHeader: string;
-  imageLink?: imageInfo;
+  imageLink?: IImageInfo;
 }
 
-interface imageInfo {
+interface IImageInfo {
   id: string;
   path: string;
   alt: string;
