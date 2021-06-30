@@ -3,12 +3,11 @@ import { RouteComponentProps } from '@reach/router';
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 
-const Projects = (props: RouteComponentProps): JSX.Element => {
+const Projects: React.FC = (props: RouteComponentProps) => {
   const [projects, setProjects] = useState([
     {
       title: 'Project1',
-      description:
-        'Blah blah blah blah',
+      description: 'Blah blah blah blah',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
       repoInfo: {
         githubUrl: 'https://github.com/galambborong/project1'
@@ -16,8 +15,7 @@ const Projects = (props: RouteComponentProps): JSX.Element => {
     },
     {
       title: 'Project2',
-      description:
-        'Meh meh meh meh',
+      description: 'Meh meh meh meh',
       technologies: ['Blood', 'Sweat', 'Tears'],
       repoInfo: {
         githubUrl: 'https://github.com/galambborong/project2'
@@ -25,13 +23,12 @@ const Projects = (props: RouteComponentProps): JSX.Element => {
     },
     {
       title: 'Project3',
-      description:
-        'Poo poo poo poo poo',
+      description: 'Poo poo poo poo poo',
       technologies: ['Bristol stool chart', 'RateMyPoo.com'],
       repoInfo: {
         githubUrl: 'https://github.com/galambborong/portfolio3'
       }
-    },
+    }
   ]);
   return (
     <main>
