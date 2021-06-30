@@ -20,6 +20,7 @@ const Header: React.FC<IProps> = ({ headerContent }: IProps) => {
   const {
     mainHeader,
     subHeader,
+    imageLink: {id, alt, path} 
   } = headerContent;
   
   return (
@@ -28,7 +29,7 @@ const Header: React.FC<IProps> = ({ headerContent }: IProps) => {
         {mainHeader}
       </h1>
         { headerContent.imageLink &&
-        <img data-testid="image" id={headerContent.imageLink.id} src={headerContent.imageLink.path} alt={headerContent.imageLink.alt} />
+        <img data-testid="image" id={id} src={path} alt={alt} />
         }  
       <h2 className="header__sub" data-testid="sub">
         {subHeader}
