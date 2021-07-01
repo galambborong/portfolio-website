@@ -3,6 +3,7 @@ import { Router } from '@reach/router';
 import Nav from './components/Nav';
 import LandingPage from './components/LandingPage';
 import About from './components/About';
+import Music from './components/Music';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 
@@ -15,6 +16,7 @@ function App(): JSX.Element {
         <About path="/about" />
         <Projects path="/projects" />
         <Contact path="/contact" />
+        <Music path="/about/music" />
       </Router>
     </div>
   );
