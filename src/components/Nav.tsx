@@ -18,21 +18,9 @@ const Nav: React.FC = () => {
         <i className="fa fa-bars" aria-hidden="true" />
       </button>
       <ul className="menu__list">
-        <li className="menu_item">
-          <Link to="/about" data-testid="nav__about">
-            about
-          </Link>
-        </li>
-        <li className="menu_item">
-          <Link to="/projects" data-testid="nav__projects">
-            projects
-          </Link>
-        </li>
-        <li className="menu_item">
-          <Link to="/contact" data-testid="nav__contact">
-            contact
-          </Link>
-        </li>
+        <li className="menu__item"><a href="/about" data-testid="nav__about">about</a></li>
+        <li className="menu__item"><a href="/projects" data-testid="nav__projects">projects</a></li>
+        <li className="menu__item"><a href="/contact" data-testid="nav__contact">contact</a></li>
       </ul>
     </nav>
   );
