@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { getRepoInfo } from '../utils/githubApi';
 
 interface IProps {
   project: ProjectCardTypes;
@@ -16,7 +17,18 @@ type repoInfo = {
 };
 
 const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
-  const { title, description, technologies, repoInfo: {githubUrl} } = project;
+  const {
+    title,
+    description,
+    technologies,
+    repoInfo: { githubUrl }
+  } = project;
+
+  useEffect(() => {
+    getRepoInfo('portfolio-website').then((res: any) => {
+      console.log(res);
+    });
+  }, []);
 
   return (
     <article className="card" id={title} data-testid="project__card">
