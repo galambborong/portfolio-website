@@ -2,9 +2,10 @@ import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 import { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import Header from './Header';
 
 const Projects: React.FC = (props: RouteComponentProps) => {
-  const [projects, setProjects] = useState([
+  const [mainProjects] = useState([
     {
       title: 'Project1',
       description: 'Blah blah blah blah',
@@ -30,12 +31,42 @@ const Projects: React.FC = (props: RouteComponentProps) => {
       }
     }
   ]);
+  const [secondaryProjects] = useState([
+    {
+      title: 'Project X',
+      description: 'Coming from X',
+      technologies: ['X', 'Y', 'Z'],
+      repoInfo: {
+        githubUrl: 'https://github.com/galambborong/projectX'
+      }
+    }
+  ]);
+  const [mainHeader] = useState({
+    mainHeader: 'Coding',
+    subHeader: 'A brief overview of my coding projects'
+  });
+  const [secondaryHeader] = useState({
+    subHeader: 'Related projects'
+  });
+
   return (
     <main>
-      <p>hello</p>
-      {projects.map((project, idx) => {
-        return <ProjectCard key={`${idx}${project.title}`} project={project} />;
-      })}
+      <Header headerContent={mainHeader} />
+      <section className="card-holder card-holder--main">
+        {mainProjects.map((project, idx) => {
+          return (
+            <ProjectCard key={`${idx}${project.title}`} project={project} />
+          );
+        })}
+      </section>
+      <Header headerContent={secondaryHeader} />
+      <section className="card-holder card-holder--extra">
+        {secondaryProjects.map((project, idx) => {
+          return (
+            <ProjectCard key={`${idx}${project.title}`} project={project} />
+          );
+        })}
+      </section>
     </main>
   );
 };
