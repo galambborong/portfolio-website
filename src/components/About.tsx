@@ -2,7 +2,7 @@ import { RouteComponentProps } from '@reach/router';
 import React from 'react';
 import Header from './Header';
 
-const About: React.FC = (props: RouteComponentProps) => {
+const About: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
   const temporaryHeader = {
     mainHeader: 'About me',
     subHeader: 'Musician-turned-coder',

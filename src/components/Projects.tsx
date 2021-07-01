@@ -4,7 +4,9 @@ import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import Header from './Header';
 
-const Projects: React.FC = (props: RouteComponentProps) => {
+const Projects: React.FC<RouteComponentProps> = (
+  props: RouteComponentProps
+) => {
   const [mainProjects] = useState([
     {
       title: 'Project1',
