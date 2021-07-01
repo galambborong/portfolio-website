@@ -8,3 +8,5 @@ This website was created as part of my precourse material for my [[https://north
 The site was built following a 'mobile-first' approach. It is fully responsive and accessible. 
 
 Its first draft was created using only HTML, CSS and a very basic use of JavaScript. I have now moved all the CSS over to SASS. Through this process, I fully overhauled the class namings to follow the [[http://getbem.com/][BEM]] convention. 
+
+I'm currently moving the whole thing into TypeScript/React, and plan to build a back-end for it too. For the front-end refactor to TS/React, see the `react` branch.
