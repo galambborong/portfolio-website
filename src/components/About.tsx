@@ -114,7 +114,7 @@ const About: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
       <aside id="music-info">
         <p>
           If you&apos;re interested, here&apos;s a little{' '}
-          <a href="./music">overview</a> of some of my musical activities.
+          <a href="/music">overview</a> of some of my musical activities.
         </p>
       </aside>
     </>
