@@ -14,7 +14,7 @@ const Music: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
       <section className="section" id="performer">
         <h3 className="section__title">Performing</h3>
         <p className="section__blurb">
-          I work in various contexts as a conductor/music director. I founded
+          I work in various contexts as a conductor/music director. I founded{' '}
           <a
             href="https://operadeilumi.org.uk"
             className="external"
@@ -23,7 +23,7 @@ const Music: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
           >
             Opera dei Lumi
           </a>
-          and am Music Director of
+          and am Music Director of{' '}
           <a
             href="https://northernpraeclassica.weebly.com/index.html"
             className="external"

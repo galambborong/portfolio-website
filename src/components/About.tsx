@@ -21,7 +21,7 @@ const About: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
           <p className="section__blurb">
             I trained as a musician and musicologist and am now changing career
             path and pursuing my interest in coding. I recently completed a full
-            stack developer course with
+            stack developer course with{' '}
             <a
               href="https://northcoders.com/"
               className="external"
@@ -57,7 +57,7 @@ const About: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
           </p>
           <p className="section__blurb">
             Since getting into coding, I&apos;ve explored the languages and
-            technologies below. Where applicable, I&apos;ve included my
+            technologies below. Where applicable, I&apos;ve included my{' '}
             <a
               href="https://app.pluralsight.com/profile/galambborong"
               className="external"
@@ -113,9 +113,8 @@ const About: React.FC<RouteComponentProps> = (props: RouteComponentProps) => {
       </main>
       <aside id="music-info">
         <p>
-          If you&apos;re interested, here&apos;s a little
-          <a href="./music">overview</a>
-          of some of my musical activities.
+          If you&apos;re interested, here&apos;s a little{' '}
+          <a href="./music">overview</a> of some of my musical activities.
         </p>
       </aside>
     </>
