@@ -19,5 +19,5 @@ test('SectionContent renders text passed through props', () => {
   const sectionHeader = getByText(sampleSectionContent.sectionHeader);
   const sectionBody = getByText(sampleSectionContent.body);
   expect(sectionHeader).toHaveTextContent(/Hello world/);
-  expect(sectionBody).toHaveTextContent(/Lorem ipsum dolor sit amet consectetur/);
+  expect(sectionBody).toHaveTextContent(/Lorem ipsum dolor sit amet consectetur adipisicing elit./);
 })
