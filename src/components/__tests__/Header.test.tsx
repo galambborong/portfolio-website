@@ -43,9 +43,9 @@ test('Render image if provided', () => {
 const sampleHeaderNoImage = {
   mainHeader: 'Hello there',
   subHeader: 'This is another subheader',
-}
+};
 
 test('Do not render img tag if not provided', () => {
   const { queryByTestId } = render(<Header headerContent={sampleHeaderNoImage}/>);
-  expect(queryByTestId('image')).not.toBeInTheDocument()
+  expect(queryByTestId('image')).not.toBeInTheDocument();
 });
