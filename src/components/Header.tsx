@@ -5,7 +5,7 @@ interface IProps {
 }
 
 interface IHeading {
-  mainHeader: string;
+  mainHeader?: string;
   subHeader: string;
   imageLink?: IImageInfo;
 }
@@ -21,9 +21,11 @@ const Header: React.FC<IProps> = ({ headerContent }: IProps) => {
 
   return (
     <header className="header">
-      <h1 className="header__title" data-testid="main">
-        {mainHeader}
-      </h1>
+      {headerContent.mainHeader && (
+        <h1 className="header__title" data-testid="main">
+          {mainHeader}
+        </h1>
+      )}
       {headerContent.imageLink && (
         <img
           data-testid="image"
