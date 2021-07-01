@@ -16,8 +16,7 @@ type repoInfo = {
 };
 
 const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
-  const { title, description, technologies, repoInfo } = project;
-  const { githubUrl } = repoInfo;
+  const { title, description, technologies, repoInfo: {githubUrl} } = project;
 
   return (
     <article className="card" id={title} data-testid="project__card">
