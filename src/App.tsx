@@ -16,7 +16,7 @@ function App(): JSX.Element {
         <About path="/about" />
         <Projects path="/projects" />
         <Contact path="/contact" />
-        <Music path="/about/music" />
+        <Music path="/music" />
       </Router>
     </div>
   );
