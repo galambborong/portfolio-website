@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { getRepoInfo } from '../utils/githubApi';
+import {keyFormatter} from "../utils/keyFormatter";
 
 interface IProps {
   project: ProjectCardTypes;
@@ -39,7 +40,7 @@ const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
       <p className="card__desc">Technologies</p>
       <ul className="tech">
         {technologies.map((technology, idx) => {
-          return <li key={`${idx}${technology}`}>{technology}</li>;
+          return <li key={keyFormatter(idx, technology)}>{technology}</li>;
         })}
       </ul>
       <div className="repo-info">
