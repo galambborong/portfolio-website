@@ -6,7 +6,7 @@ interface IProps {
 
 interface IContent {
   sectionHeader: string;
-  body: string;
+  body: JSX.Element;
 }
 
 const SectionContent: React.FC<IProps> = ({ sectionContent }: IProps) => {
