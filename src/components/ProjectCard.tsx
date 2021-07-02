@@ -25,11 +25,11 @@ const ProjectCard: React.FC<IProps> = ({ project }: IProps) => {
     repoInfo: { githubUrl }
   } = project;
 
-  useEffect(() => {
-    getRepoInfo('portfolio-website').then((res: any) => {
-      console.log(res);
-    });
-  }, []);
+  // useEffect(() => {
+  //   getRepoInfo('portfolio-website').then((res: any) => {
+  //     console.log(res);
+  //   });
+  // }, []);
 
   return (
     <article className="card" id={title} data-testid="project__card">
