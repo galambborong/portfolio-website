@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { RouteComponentProps } from '@reach/router';
-import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import Header from './Header';
-import {keyFormatter} from "../utils/keyFormatter";
+import { keyFormatter } from '../utils/keyFormatter';
 
 const Projects: React.FC<RouteComponentProps> = (
   props: RouteComponentProps
@@ -66,7 +65,10 @@ const Projects: React.FC<RouteComponentProps> = (
       <section className="card-holder card-holder--extra">
         {secondaryProjects.map((project, idx) => {
           return (
-            <ProjectCard key={keyFormatter(idx, project.title)} project={project} />
+            <ProjectCard
+              key={keyFormatter(idx, project.title)}
+              project={project}
+            />
           );
         })}
       </section>

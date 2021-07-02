@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { getRepoInfo } from '../utils/githubApi';
-import {keyFormatter} from "../utils/keyFormatter";
+import { keyFormatter } from '../utils/keyFormatter';
 
 interface IProps {
   project: ProjectCardTypes;
