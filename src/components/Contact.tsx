@@ -3,6 +3,7 @@ import { RouteComponentProps } from '@reach/router';
 import Header from './Header';
 import SectionContent from './SectionContent';
 import { keyFormatter } from '../utils/keyFormatter';
+import ContactForm from './ContactForm';
 
 const Contact: React.FC<RouteComponentProps> = () => {
   const [header] = useState({
@@ -49,6 +50,7 @@ const Contact: React.FC<RouteComponentProps> = () => {
       <p>
         If you want to get in touch, I&apos;d be delighted to hear from you!
       </p>
+      <ContactForm  />
       {sections.map((section, idx) => {
         return (
           <SectionContent
