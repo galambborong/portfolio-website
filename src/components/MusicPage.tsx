@@ -5,7 +5,7 @@ import { useState } from 'react';
 import SectionContent from './SectionContent';
 import { keyFormatter } from '../utils/keyFormatter';
 
-const Music: React.FC<RouteComponentProps> = () => {
+const MusicPage: React.FC<RouteComponentProps> = () => {
   const [headers] = useState({
     mainHeader: 'My musical activities',
     subHeader: 'A brief summary'
@@ -97,4 +97,4 @@ const Music: React.FC<RouteComponentProps> = () => {
   );
 };
 
-export default Music;
+export default MusicPage;

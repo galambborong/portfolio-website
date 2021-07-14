@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import Header from './Header';
 import { keyFormatter } from '../utils/keyFormatter';
 
-const Projects: React.FC<RouteComponentProps> = (
+const ProjectsPage: React.FC<RouteComponentProps> = (
   props: RouteComponentProps
 ) => {
   const [mainProjects] = useState([
@@ -76,4 +76,4 @@ const Projects: React.FC<RouteComponentProps> = (
   );
 };
 
-export default Projects;
+export default ProjectsPage;

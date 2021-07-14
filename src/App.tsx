@@ -2,10 +2,10 @@ import React from 'react';
 import { Router } from '@reach/router';
 import Nav from './components/Nav';
 import LandingPage from './components/LandingPage';
-import About from './components/About';
-import Music from './components/Music';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import AboutPage from './components/AboutPage';
+import MusicPage from './components/MusicPage';
+import ProjectsPage from './components/ProjectsPage';
+import ContactPage from './components/ContactPage';
 
 function App(): JSX.Element {
   return (
@@ -13,10 +13,10 @@ function App(): JSX.Element {
       <Nav />
       <Router>
         <LandingPage path="/" />
-        <About path="/about" />
-        <Projects path="/projects" />
-        <Contact path="/contact" />
-        <Music path="/music" />
+        <AboutPage path="/about" />
+        <ProjectsPage path="/projects" />
+        <ContactPage path="/contact" />
+        <MusicPage path="/music" />
       </Router>
     </div>
   );
