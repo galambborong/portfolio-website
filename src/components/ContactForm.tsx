@@ -9,18 +9,19 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    console.log('Inside handleSubmit');
     axios
       .post('https://formspree.io/f/xknpkpdy', { name, email, message })
-      .then(({ status }) => {
-        if (status === 400) {
+      .then((res) => {
+        if (res.status === 200) {
           setMessageSent(true);
         } else {
           setMessageSent(false);
         }
       })
-      .catch((error) => {
+      .catch((err) => {
+        console.error(err);
         setMessageSent(false);
-        console.error(error);
       });
   };
 
