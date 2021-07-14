@@ -1,13 +1,27 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 
 const ContactForm: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [messageSent, setMessageSent] = useState(null);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    console.log('Inside handleSubmit');
+    axios
+      .post('https://formspree.io/f/xknpkpdy', { name, email, message })
+      .then(({ status }) => {
+        if (status === 400) {
+          setMessageSent(true);
+        } else {
+          setMessageSent(false);
+        }
+      })
+      .catch((error) => {
+        setMessageSent(false);
+        console.error(error);
+      });
   };
 
   const handleChange = (e: {
@@ -27,6 +41,8 @@ const ContactForm: React.FC = () => {
       setMessage(value);
     }
   };
+
+  console.log(messageSent);
 
   return (
     <form onSubmit={handleSubmit} className="contact" id="contact-form">
@@ -62,6 +78,7 @@ const ContactForm: React.FC = () => {
       />
       <p id="message-invalid"></p>
       <button type="submit">Submit</button>
+      {messageSent && <p>Message sent successfully</p>}
     </form>
   );
 };
