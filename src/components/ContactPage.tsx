@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { RouteComponentProps } from '@reach/router';
 import Header from './Header';
 import SectionContent from './SectionContent';
+import ReactEmbedGist from 'react-embed-gist';
 import { keyFormatter } from '../utils/keyFormatter';
-import ContactForm from './ContactForm';
 
 const ContactPage: React.FC<RouteComponentProps> = () => {
   const [header] = useState({
@@ -11,15 +11,6 @@ const ContactPage: React.FC<RouteComponentProps> = () => {
     subHeader: 'How to get in touch'
   });
   const [sections] = useState([
-    {
-      sectionHeader: 'Contact form',
-      body: (
-        <>
-          Fill out the contact form details below and I will respond as soon as
-          possible.
-        </>
-      )
-    },
     {
       sectionHeader: 'Email',
       body: (
@@ -44,21 +35,21 @@ const ContactPage: React.FC<RouteComponentProps> = () => {
     { url: 'https://www.linkedin.com/in/p-keenan', name: 'LinkedIn' }
   ]);
 
+  const [email, socialM] = sections;
+
   return (
     <main>
       <Header headerContent={header} />
       <p>
         If you want to get in touch, I&apos;d be delighted to hear from you!
       </p>
-      <ContactForm />
-      {sections.map((section, idx) => {
-        return (
-          <SectionContent
-            key={keyFormatter(idx, section.sectionHeader)}
-            sectionContent={section}
-          />
-        );
-      })}
+
+      <SectionContent sectionContent={email} />
+      <ReactEmbedGist
+        gist="galambborong/dc9c91031f90f74278edd81242f7f44f"
+        titleClass=""
+      />
+      <SectionContent sectionContent={socialM} />
       <ul className="section__list">
         {socialMedia.map(({ name, url }, idx) => {
           return (
