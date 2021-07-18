@@ -436,6 +436,15 @@ textarea {
   line-height: 1;
 }
 
+/* Gist stuff */
+.gist__title {
+  display: none;
+}
+
+.gist__wrapper {
+  background-color: #292d3e;
+}
+
 /* Main media queries */
 @media screen and (min-width: 900px) {
   .card-holder--main {

@@ -9,7 +9,7 @@ const ProjectsPage: React.FC<RouteComponentProps> = (
 ) => {
   const [mainProjects] = useState([
     {
-      title: 'Project1',
+      title: 'portfolio-website',
       description: 'Blah blah blah blah',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Sass'],
       repoInfo: {
@@ -17,7 +17,7 @@ const ProjectsPage: React.FC<RouteComponentProps> = (
       }
     },
     {
-      title: 'Project2',
+      title: 'bingr-native',
       description: 'Meh meh meh meh',
       technologies: ['Blood', 'Sweat', 'Tears'],
       repoInfo: {
@@ -25,7 +25,7 @@ const ProjectsPage: React.FC<RouteComponentProps> = (
       }
     },
     {
-      title: 'Project3',
+      title: 'commander',
       description: 'Poo poo poo poo poo',
       technologies: ['Bristol stool chart', 'RateMyPoo.com'],
       repoInfo: {
@@ -63,14 +63,14 @@ const ProjectsPage: React.FC<RouteComponentProps> = (
       </section>
       <Header headerContent={secondaryHeader} />
       <section className="card-holder card-holder--extra">
-        {secondaryProjects.map((project, idx) => {
+        {/* {secondaryProjects.map((project, idx) => {
           return (
             <ProjectCard
               key={keyFormatter(idx, project.title)}
               project={project}
             />
           );
-        })}
+        })} */}
       </section>
     </main>
   );

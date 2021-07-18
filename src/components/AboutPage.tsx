@@ -2,15 +2,13 @@ import { RouteComponentProps } from '@reach/router';
 import React from 'react';
 import Header from './Header';
 
-const AboutPage: React.FC<RouteComponentProps> = (
-  props: RouteComponentProps
-) => {
+const AboutPage: React.FC<RouteComponentProps> = () => {
   const temporaryHeader = {
     mainHeader: 'About me',
     subHeader: 'Musician-turned-coder',
     imageLink: {
       id: 'pk',
-      path: '/home/pk/Repos/portfolio-website/src/CONTENT/images/peter-keenan.jpeg',
+      path: '/images/peter-keenan.jpeg',
       alt: 'Photograph of Peter Keenan in a wood'
     }
   };

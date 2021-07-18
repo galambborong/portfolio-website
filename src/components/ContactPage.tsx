@@ -43,12 +43,19 @@ const ContactPage: React.FC<RouteComponentProps> = () => {
       <p>
         If you want to get in touch, I&apos;d be delighted to hear from you!
       </p>
-
       <SectionContent sectionContent={email} />
       <ReactEmbedGist
         gist="galambborong/dc9c91031f90f74278edd81242f7f44f"
-        titleClass=""
+        titleClass="gist__title"
+        contentClass="gist__wrapper"
       />
+      <p>
+        Should you prefer to use encrypted email,{' '}
+        <a href="/pk_public.pgp" target="_blank" rel="noopener noreferrer">
+          {' '}
+          my public GPG key is available here.
+        </a>
+      </p>
       <SectionContent sectionContent={socialM} />
       <ul className="section__list">
         {socialMedia.map(({ name, url }, idx) => {
